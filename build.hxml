@@ -1,0 +1,13 @@
+-debug
+-lib fairy
+-lib sfhx
+-lib sfgml
+-lib openfl
+-cp src
+-js .\out\ext_tests.gml
+-D sfgml-next
+-D sfgml-snake-case
+-D sfgml-assets-path=F:\Repostitories\github\autukill\fairytest\yyp\test.yyp
+-D sfgml-main=fairy_test_init
+-main Main
+-dce full
