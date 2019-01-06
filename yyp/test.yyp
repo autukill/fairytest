@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "eab3965c-1cdd-41f8-b97e-88f29b334f5f",
+            "Value": {
+                "id": "2531c18b-dfa3-4f70-a63f-8d3e30305722",
+                "resourcePath": "scripts\\fairy_test_main_map_func\\fairy_test_main_map_func.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ed81d42f-9dac-448e-9624-0e64a460553d",
             "Value": {
                 "id": "847a34bb-12d3-49db-a869-5be2672ee7cf",
@@ -1193,6 +1201,7 @@
         "91352c6c-619c-472a-bab1-3ad332ddc9e1",
         "11c1811a-79ed-4ae6-8a9b-5a36d33c25c1",
         "b1f0e166-596e-4a63-a36f-28b8c4ff0197",
+        "eab3965c-1cdd-41f8-b97e-88f29b334f5f",
         "b5498f2e-7c7b-45bd-86d8-4e269905af59"
     ],
     "tutorial": ""

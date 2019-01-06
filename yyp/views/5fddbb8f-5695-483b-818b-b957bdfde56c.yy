@@ -90,7 +90,8 @@
         "90bfddfa-eb8e-43ff-b980-304c86ed8d6e",
         "91352c6c-619c-472a-bab1-3ad332ddc9e1",
         "11c1811a-79ed-4ae6-8a9b-5a36d33c25c1",
-        "b1f0e166-596e-4a63-a36f-28b8c4ff0197"
+        "b1f0e166-596e-4a63-a36f-28b8c4ff0197",
+        "eab3965c-1cdd-41f8-b97e-88f29b334f5f"
     ],
     "filterType": "GMScript",
     "folderName": "application",
