@@ -2,7 +2,6 @@
 -lib fairy
 -lib sfhx
 -lib sfgml
--lib openfl
 -cp src
 -js .\out\ext_tests.gml
 -D sfgml-next

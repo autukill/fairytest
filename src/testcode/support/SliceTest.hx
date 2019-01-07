@@ -1,9 +1,8 @@
-package support;
-
+package testcode.support;
 import gml.Scripts;
 
 class SliceTest {
-    public inline static function test() {
+    public static function test() {
         // getter/setter
         var zero = new support.Slice();
         var one = new support.Slice([0, 1, 2, 3, 4]);
@@ -55,7 +54,19 @@ class SliceTest {
             return x * 10;
         }
         var result = one.map(mapFunc);
-        Scripts.it("slice.map(), return new array", false, one.array == result);
+        Scripts.it("slice.map(), return new array", false, one == result);
         Scripts.it("slice.map(), return new array element", 10, result[1]);
+
+        // copy
+        var one = new support.Slice([0, 1, 2, 3, 4]);
+        var two = one.copy();
+        Scripts.it("slice.copy(), return new array", false, one == two);
+        Scripts.it("slice.copy(), return same array element", 5, two.length);
+
+        // for...in
+        var one = new support.Slice([0, 1, 2, 3, 4]);
+        for (i in one) {
+            trace(i);
+        }
     }
 }
