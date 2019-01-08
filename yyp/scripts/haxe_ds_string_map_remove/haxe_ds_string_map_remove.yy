@@ -1,5 +1,5 @@
 {
-    "id": "770adc7f-f3c3-4fba-9bea-d338c720f4e4",
+    "id": "bc376013-d407-4ac1-b5f5-5f648d9325eb",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "haxe_ds_string_map_remove",

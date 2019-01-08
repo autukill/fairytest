@@ -1,5 +1,5 @@
 {
-    "id": "5fd1c2c8-fcf3-47fa-9a66-1ce1dd89d40e",
+    "id": "f7d26d82-e900-41c7-904a-b46e76be476a",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "fairy_init",

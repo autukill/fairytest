@@ -1,5 +1,5 @@
 {
-    "id": "aa1883cb-bd3f-4b3f-a955-c4cef8b406c6",
+    "id": "5b1ba76c-d7bb-45f3-90dc-7beb371c7ffa",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "events__event_dispatcher_dispatch_iterator_remove",

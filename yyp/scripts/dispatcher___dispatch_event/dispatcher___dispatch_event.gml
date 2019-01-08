@@ -13,10 +13,10 @@ event[@2/* current_target */] = this;
 var capture = event[3/* event_phase */] == 1;
 var index = 0;
 var iterators = haxe_ds_string_map_get(this[1/* __iterators */], type);
-var iterator = iterators[0];
+var iterator = haxe_boot_wget(iterators[0/* array */], 0);
 if (iterator[0/* active */]) {
 	iterator = events__event_dispatcher_dispatch_iterator_create(list);
-	array_hx_push(iterators, iterator);
+	slice_push(iterators, iterator);
 }
 events__event_dispatcher_dispatch_iterator_start(iterator);
 var listener = iterator;
@@ -29,5 +29,5 @@ while (events__event_dispatcher_dispatch_iterator_has_next(listener)) {
 	}
 }
 events__event_dispatcher_dispatch_iterator_stop(iterator);
-if (iterator != iterators[0]) show_error("Array.remove is not supported.", false); else events__event_dispatcher_dispatch_iterator_reset(iterator, list);
+if (iterator != haxe_boot_wget(iterators[0/* array */], 0)) slice_remove(iterators, iterator); else events__event_dispatcher_dispatch_iterator_reset(iterator, list);
 return !events_event_is_default_prevented(event);

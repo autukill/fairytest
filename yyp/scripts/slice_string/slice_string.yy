@@ -1,5 +1,5 @@
 {
-    "id": "3288dbf6-c661-4078-9908-bb0906c8c4ef",
+    "id": "ba851cb1-6521-426d-98b9-255f9e04f737",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "slice_string",

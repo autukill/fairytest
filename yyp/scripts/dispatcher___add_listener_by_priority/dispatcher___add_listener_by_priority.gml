@@ -1,18 +1,18 @@
-/// @function dispatcher___add_listener_by_priority(this:dispatcher, list:array<Listener>, listener:Listener)
+/// @function dispatcher___add_listener_by_priority(this:dispatcher, list:Slice<Listener>, listener:Listener)
 /// @param this:dispatcher
-/// @param list:array<Listener>
+/// @param list:Slice<Listener>
 /// @param listener:Listener
 var list = argument[1], listener = argument[2];
-var numElements = array_length_1d(list);
+var numElements = slice_length(list);
 var addAtPosition = numElements;
 var i = 0;
 for (var _g1 = numElements; i < _g1; i++) {
-	if (haxe_boot_wget(list[i], 1) < listener[1/* priority */]) {
+	if (haxe_boot_wget(haxe_boot_wget(list[0/* array */], i), 1) < listener[1/* priority */]) {
 		addAtPosition = i;
 		break;
 	}
 }
-array_hx_insert(list, addAtPosition, listener);
+slice_insert(list, addAtPosition, listener);
 
 //}
 

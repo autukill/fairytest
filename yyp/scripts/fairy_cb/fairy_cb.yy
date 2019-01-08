@@ -1,5 +1,5 @@
 {
-    "id": "03bf2f4b-a535-4367-9b83-38ade39a99d9",
+    "id": "ebc71447-0bfd-40ed-9627-3f086f33b598",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "fairy_cb",

@@ -1,5 +1,5 @@
 {
-    "id": "a85a310b-d4b3-483b-89ff-5f1f822bbd21",
+    "id": "efa02cc3-d06d-4dfa-98c9-3babeb2010ae",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "haxe_boot_wget",

@@ -1,5 +1,5 @@
 {
-    "id": "2ae03bad-a9d1-42d6-ac79-c06aa9a7de01",
+    "id": "7e50b335-833b-482e-b95b-34bc3b94c3d5",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "events__event_dispatcher_dispatch_iterator_has_next",
