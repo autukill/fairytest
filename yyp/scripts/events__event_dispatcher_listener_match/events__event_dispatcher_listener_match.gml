@@ -7,4 +7,4 @@ return callback == this[0/* callback */] && this[2/* use_capture */] == useCaptu
 
 //}
 
-//{ haxe.class
+//{ geom.point

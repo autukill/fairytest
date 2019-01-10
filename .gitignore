@@ -3,12 +3,6 @@ out/
 
 \.idea/
 
-yyp/test\.yyp\.sfgml-scripts-cache
-
-yyp/scripts/
-
-yyp/
-
 src/events/
 
 src/support/

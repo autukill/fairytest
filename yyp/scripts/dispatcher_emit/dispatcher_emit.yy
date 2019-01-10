@@ -1,5 +1,5 @@
 {
-    "id": "b7cd2fc3-de9a-41f5-b200-bf3442b5a0a3",
+    "id": "f805c9ae-9fa8-49ff-9667-f82e67a18e92",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "dispatcher_emit",

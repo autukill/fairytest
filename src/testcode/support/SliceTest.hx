@@ -2,7 +2,7 @@ package testcode.support;
 import gml.Scripts;
 
 class SliceTest {
-    public static inline function test() {
+    public static function test() {
         // getter/setter
         var zero = new support.Slice();
         var one = new support.Slice([0, 1, 2, 3, 4]);

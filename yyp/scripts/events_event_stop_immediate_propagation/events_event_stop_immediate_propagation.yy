@@ -1,5 +1,5 @@
 {
-    "id": "884d4363-8020-4949-9b48-e0e78b0d9cfa",
+    "id": "25fbe8b7-0abd-458d-8d74-4548fd861030",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "events_event_stop_immediate_propagation",

@@ -1,26 +1,28 @@
-// Generated at 2019-01-08 23:12:04 (474ms) for v2.1.4+
+// Generated at 2019-01-10 10:27:49 (473ms) for v2.1.4+
 //{ prototypes
 globalvar mq_events_event; mq_events_event = [/* 0:bubbles */undefined, /* 1:cancelable */undefined, /* 2:current_target */undefined, /* 3:event_phase */undefined, /* 4:target */undefined, /* 5:type */undefined, /* 6:__is_canceled */undefined, /* 7:__is_canceled_now */undefined, /* 8:__prevent_default */undefined];
 globalvar mq_dispatcher; mq_dispatcher = [/* 0:__event_map */undefined, /* 1:__iterators */undefined, /* 2:__target_dispatcher */undefined];
 globalvar mq_events__event_dispatcher_dispatch_iterator; mq_events__event_dispatcher_dispatch_iterator = [/* 0:active */undefined, /* 1:index */0, /* 2:is_copy */undefined, /* 3:list */undefined];
 globalvar mq_events__event_dispatcher_listener; mq_events__event_dispatcher_listener = [/* 0:callback */undefined, /* 1:priority */0, /* 2:use_capture */undefined];
+globalvar mq_geom_point; mq_geom_point = [/* 0:x */undefined, /* 1:y */undefined];
 globalvar mq_haxe_class; mq_haxe_class = [/* 0:index */0, /* 1:name */undefined, /* 2:superClass */undefined];
 globalvar mq_haxe_ds_basic_map; mq_haxe_ds_basic_map = [/* 0:table_size */0, /* 1:size */0, /* 2:pairs */undefined];
 globalvar mq_haxe_ds_string_map; mq_haxe_ds_string_map = [/* 0:table_size */0, /* 1:size */0, /* 2:pairs */undefined];
 globalvar mq_slice; mq_slice = [/* 0:array */undefined];
 //}
 //{ metatype
-globalvar mt_events_event; mt_events_event = haxe_class_create(26, "events_event");
-globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(28, "dispatcher");
-globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(29, "events__event_dispatcher_dispatch_iterator");
-globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(30, "events__event_dispatcher_listener");
-globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(38, "haxe_class");
-globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(78, "haxe_ds_basic_map");
-globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(80, "haxe_ds_string_map");
-globalvar mt_slice; mt_slice = haxe_class_create(122, "slice");
+globalvar mt_events_event; mt_events_event = haxe_class_create(27, "events_event");
+globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(29, "dispatcher");
+globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(30, "events__event_dispatcher_dispatch_iterator");
+globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(31, "events__event_dispatcher_listener");
+globalvar mt_geom_point; mt_geom_point = haxe_class_create(33, "geom_point");
+globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(40, "haxe_class");
+globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(80, "haxe_ds_basic_map");
+globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(82, "haxe_ds_string_map");
+globalvar mt_slice; mt_slice = haxe_class_create(124, "slice");
 //}
-globalvar f_fairy_test_main_map_func; f_fairy_test_main_map_func = asset_get_index("fairy_test_main_map_func");
-globalvar f_fairy_test_main_cb; f_fairy_test_main_cb = asset_get_index("fairy_test_main_cb");
+globalvar f_testcode_events_events_test_test_cb; f_testcode_events_events_test_test_cb = asset_get_index("testcode_events_events_test_test_cb");
+globalvar f_testcode_support_slice_test_test_map_func; f_testcode_support_slice_test_test_map_func = asset_get_index("testcode_support_slice_test_test_map_func");
 // array_hx:
 globalvar array_hx_join_buf; array_hx_join_buf = undefined;
 globalvar array_hx_filter_list; array_hx_filter_list = undefined;

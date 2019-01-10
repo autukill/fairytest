@@ -2,7 +2,7 @@
 /// @param var_id:int
 /// @param name:string
 var this;
-this[1,0/* metatype */] = 38;
+this[1,0/* metatype */] = 40;
 var __this = mq_haxe_class;
 array_copy(this, 0, __this, 0, array_length_1d(__this));
 var var_id = argument[0], name = argument[1];

@@ -1,5 +1,5 @@
 {
-    "id": "f44764d6-e1fa-4425-84e3-5f5b6433690c",
+    "id": "95647231-da62-447f-b65e-e26541efb4c3",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "array_hx_iterator_has_next",

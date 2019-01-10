@@ -2,7 +2,7 @@ package testcode.events;
 import events.*;
 
 class EventsTest {
-    public static inline function test() {
+    public static function test() {
         var ev = new Event("onclick");
         var one = new EventDispatcher();
         var cb = x -> trace("hohoho");

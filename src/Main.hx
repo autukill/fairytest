@@ -3,5 +3,6 @@ class Main {
     static public function main() {
         testcode.support.SliceTest.test();
         testcode.events.EventsTest.test();
+        testcode.geom.Point.test();
     }
 }
