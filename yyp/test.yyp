@@ -31,38 +31,6 @@
     },
     "resources": [
         {
-            "Key": "020be1cd-fad5-4bfe-9478-8959cbc33406",
-            "Value": {
-                "id": "f06fe605-9b8d-48e4-a749-0d76f0710228",
-                "resourcePath": "scripts\\geom_rectangle_set_to\\geom_rectangle_set_to.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "021ca199-b642-45f9-b74b-c1407f611bce",
-            "Value": {
-                "id": "fe4ee2f6-8775-493f-a5ee-486bec7594b9",
-                "resourcePath": "scripts\\fairy_test_main\\fairy_test_main.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "05752684-872c-47dd-b8f1-a104c4f86827",
-            "Value": {
-                "id": "1abf870e-6dba-44dc-9aad-5877c5ef40c0",
-                "resourcePath": "scripts\\geom_rectangle_create\\geom_rectangle_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "06247756-95bc-4bff-acc6-8c04a7ff429d",
-            "Value": {
-                "id": "0ce5d963-7be0-42dc-a54a-4f28333e4348",
-                "resourcePath": "scripts\\haxe_ds_string_map_get\\haxe_ds_string_map_get.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "07357bb8-a137-4e74-8e64-042639d38904",
             "Value": {
                 "id": "b0b044e1-9089-43ab-96e1-6116642a3aba",
@@ -71,154 +39,10 @@
             }
         },
         {
-            "Key": "075eab28-bfdf-4013-adb7-ab81fdf75106",
-            "Value": {
-                "id": "1f5063b4-bf65-4337-8112-cca37bd8b91d",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_stop\\events__event_dispatcher_dispatch_iterator_stop.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "085ff07d-a67b-49e8-a011-eb477590eb99",
-            "Value": {
-                "id": "a6e6988d-e8e9-43c9-b65e-db1b330f27e0",
-                "resourcePath": "scripts\\haxe_ds_basic_map_crc32get\\haxe_ds_basic_map_crc32get.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "0879f04d-1fc3-4274-81e9-fcd5b163c78e",
-            "Value": {
-                "id": "3480a17e-fb69-4cdb-a158-bb0a6cf3f8a2",
-                "resourcePath": "scripts\\slice_unshift\\slice_unshift.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "09e4cd11-ed91-4523-b1a2-e15d65648003",
-            "Value": {
-                "id": "c5e05161-ec2e-4998-902f-c826a4c214a9",
-                "resourcePath": "scripts\\geom_rectangle_set_top_left\\geom_rectangle_set_top_left.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "0a571def-1cd5-4bae-bf32-ec2cd8708d51",
-            "Value": {
-                "id": "27d34478-a559-4065-840a-0d8f1bbf2490",
-                "resourcePath": "scripts\\geom_point_offset\\geom_point_offset.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "0c3dfd71-1f54-42cf-a9a0-8cf42e249b5e",
-            "Value": {
-                "id": "b2385fa3-d0eb-4663-acd5-1793f5a559a8",
-                "resourcePath": "scripts\\geom_point_get_length\\geom_point_get_length.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "103eaaaa-778f-4352-a95d-1a359bb6be61",
             "Value": {
                 "id": "9833acdb-affa-4f6b-9105-15e5b50dad74",
                 "resourcePath": "scripts\\@__init_view\\__init_view.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1483aa7e-4cb9-4fc3-ad4a-b325a61683e1",
-            "Value": {
-                "id": "c8120b48-3314-4821-80fe-c5a448d94468",
-                "resourcePath": "scripts\\slice_set_array\\slice_set_array.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "14e0720d-ac6f-490b-b949-124eaa533947",
-            "Value": {
-                "id": "a23e63bf-1c40-4bcd-b330-fa8927e18f37",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_start\\events__event_dispatcher_dispatch_iterator_start.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "15fb95d5-114b-46b5-9c00-e8b6565e2d30",
-            "Value": {
-                "id": "11d8f737-958a-421a-b309-564f84872eda",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_remove\\events__event_dispatcher_dispatch_iterator_remove.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1881f843-602e-450f-a83e-21f0be3619ba",
-            "Value": {
-                "id": "3c2b7ae4-12b8-4c0f-9a2d-2d0fdfe80c41",
-                "resourcePath": "scripts\\haxe_ds_basic_map_raw_rehash\\haxe_ds_basic_map_raw_rehash.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1bd45b01-0290-4b42-8bbe-3d97b5c7a369",
-            "Value": {
-                "id": "3828658e-bfc4-4039-be2a-fd9b9ebd8175",
-                "resourcePath": "scripts\\geom_rectangle_clone\\geom_rectangle_clone.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1e443368-aedc-46cb-943f-cf8cd77df262",
-            "Value": {
-                "id": "75a50f51-69a1-4793-9660-a264da9e0542",
-                "resourcePath": "scripts\\slice_hx_iterator_next\\slice_hx_iterator_next.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "2083410b-6ad1-4cb9-9eef-c4ecaac86fd5",
-            "Value": {
-                "id": "14b236df-68dd-4a7c-bc3a-f4de02bd83ea",
-                "resourcePath": "scripts\\array_hx_copy\\array_hx_copy.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "216cf622-a40d-4522-bb89-de306832265b",
-            "Value": {
-                "id": "f2938023-6f7e-4bfc-9d46-d7d45d4dec90",
-                "resourcePath": "scripts\\slice_sort\\slice_sort.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "236bc0f7-0f93-42bd-b542-6948f734bde8",
-            "Value": {
-                "id": "697bf0cd-277d-42fa-bc87-aa073dc9dec5",
-                "resourcePath": "scripts\\geom_rectangle_intersects\\geom_rectangle_intersects.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "25f2052a-5ae1-4524-8fc3-f90055c441c0",
-            "Value": {
-                "id": "a1b182bc-9d67-4905-8863-b97cecaaf6fc",
-                "resourcePath": "scripts\\dispatcher_remove_fn\\dispatcher_remove_fn.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "25fbe8b7-0abd-458d-8d74-4548fd861030",
-            "Value": {
-                "id": "d29db795-4733-4cba-bd57-5d3b40aba1b4",
-                "resourcePath": "scripts\\events_event_stop_immediate_propagation\\events_event_stop_immediate_propagation.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "26a4084d-17c0-481d-9375-79027915de67",
-            "Value": {
-                "id": "4e2215e2-1d6a-4674-b639-06578ba341cd",
-                "resourcePath": "scripts\\geom_rectangle_set_bottom\\geom_rectangle_set_bottom.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -247,59 +71,11 @@
             }
         },
         {
-            "Key": "2a857d68-bce7-48e5-a181-ab6a48c0e779",
-            "Value": {
-                "id": "354d4a86-ef85-492d-8b54-d1b8855e6b9a",
-                "resourcePath": "scripts\\geom_rectangle_offset\\geom_rectangle_offset.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "2b8f7ba7-7ff6-48f0-943d-33b44dff1309",
-            "Value": {
-                "id": "fd3e9b6d-80a9-48f8-be84-099cfe66b3d8",
-                "resourcePath": "scripts\\slice_iterator\\slice_iterator.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "2c3a7996-d835-4500-a776-7c58083e967c",
             "Value": {
                 "id": "9e20ee41-c211-437f-b279-998ca113957f",
                 "resourcePath": "views\\2c3a7996-d835-4500-a776-7c58083e967c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "2df6682f-7de3-4ad8-8593-b43cf748e9c5",
-            "Value": {
-                "id": "93b25e9d-a075-44be-b360-aeee62b0df1b",
-                "resourcePath": "scripts\\slice_copy\\slice_copy.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "2fe94ab5-451a-4df9-b675-617621b24352",
-            "Value": {
-                "id": "c67e69b5-c01c-4aea-a8f6-0a60f1577671",
-                "resourcePath": "scripts\\dispatcher_add\\dispatcher_add.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "309b813d-8c6b-4e26-ae04-ff9420e63bb7",
-            "Value": {
-                "id": "aadbb086-e536-4714-88de-5b11768b2c58",
-                "resourcePath": "scripts\\geom_rectangle_set_size\\geom_rectangle_set_size.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "30e35862-0b08-4783-9a80-8ee27a56dbf9",
-            "Value": {
-                "id": "6104a260-e868-48d8-9a0e-f31453002057",
-                "resourcePath": "scripts\\slice_length\\slice_length.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -311,35 +87,11 @@
             }
         },
         {
-            "Key": "32d6cbd0-711e-410e-b899-2897e4851987",
-            "Value": {
-                "id": "4fc5f52b-f6f7-491a-ad41-db2440881184",
-                "resourcePath": "scripts\\testcode_support_slice_test_test\\testcode_support_slice_test_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "333902ab-b22b-4142-add6-841c60b7d9e8",
-            "Value": {
-                "id": "1e85b921-dd33-40e6-87f8-93ec867225ec",
-                "resourcePath": "scripts\\geom_point_to_string\\geom_point_to_string.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "3385f473-5c00-4e27-87ba-7df4a1564916",
             "Value": {
                 "id": "4055f26f-6ead-490a-ad0d-536793d242d4",
                 "resourcePath": "objects\\TEST\\TEST.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "36d80724-bc7c-4730-83e0-3758b54fca33",
-            "Value": {
-                "id": "636b7e91-2f6e-4eba-889b-6cb5d54fc456",
-                "resourcePath": "scripts\\geom_rectangle_set_right\\geom_rectangle_set_right.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -359,186 +111,10 @@
             }
         },
         {
-            "Key": "3cad4f0e-9164-41d2-ae27-c898a62ab481",
-            "Value": {
-                "id": "518c741d-7f0e-41e0-bdc0-5f4b8a3d9346",
-                "resourcePath": "scripts\\events_event_prevent_default\\events_event_prevent_default.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "3cca1784-a7e0-476a-931f-7ead79048381",
-            "Value": {
-                "id": "a25061d9-5550-48e7-bf8d-0e8910d63a19",
-                "resourcePath": "scripts\\geom_point_clone\\geom_point_clone.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "3d886044-6a16-4e9c-b1fc-e2385003d086",
-            "Value": {
-                "id": "f99ae27a-fcf0-44c8-8b46-a6b25dfa43fa",
-                "resourcePath": "scripts\\geom_rectangle_get_top_left\\geom_rectangle_get_top_left.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "3f1da155-2c46-4bdc-9057-e6d0d4927a94",
-            "Value": {
-                "id": "eb36f5ea-6c39-4f33-9223-455593ac43ae",
-                "resourcePath": "scripts\\haxe_ds_basic_map_new\\haxe_ds_basic_map_new.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "41a1f3a6-b8fe-40f2-aa5a-4f9508644cf7",
-            "Value": {
-                "id": "94099247-20a0-4915-9da4-a4188223d9c9",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_create\\events__event_dispatcher_dispatch_iterator_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "41dfcea6-5099-43ea-a07e-0c7ec4499d00",
-            "Value": {
-                "id": "5de67697-b8e6-41a2-bb83-97e3d4c32af1",
-                "resourcePath": "scripts\\slice_hx_iterator_has_next\\slice_hx_iterator_has_next.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "42d5787e-a6aa-4519-8ac6-bb9f8dabe790",
             "Value": {
                 "id": "a9d33263-5bdf-4a82-be77-19d25d650887",
                 "resourcePath": "scripts\\run_test\\run_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "455ae309-b823-444c-9ad6-db0a45dda160",
-            "Value": {
-                "id": "73b53bd4-1e0a-4ba2-8c62-845e0323e2ee",
-                "resourcePath": "scripts\\testcode_events_events_test_test\\testcode_events_events_test_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4588bdd0-d759-4dc8-85ec-068529aafcad",
-            "Value": {
-                "id": "4fbef77d-da10-429d-9616-965ef89f59d6",
-                "resourcePath": "scripts\\geom_rectangle_is_empty\\geom_rectangle_is_empty.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "469309ae-6497-4c2b-8224-c7121798b915",
-            "Value": {
-                "id": "6c864d5a-8d2a-43e9-94d7-22b081028391",
-                "resourcePath": "scripts\\geom_rectangle_copy_from\\geom_rectangle_copy_from.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "46dfc6bc-f7ed-48d5-aa52-8b1207251620",
-            "Value": {
-                "id": "55241cd8-a2ec-43b9-b064-422330a9a208",
-                "resourcePath": "scripts\\haxe_ds_basic_map_pair_create\\haxe_ds_basic_map_pair_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "49f95c2b-5d7c-4f3d-b044-07b85fdca9d6",
-            "Value": {
-                "id": "166b1f39-b336-4562-8b8c-500fbcd0eb58",
-                "resourcePath": "scripts\\geom_rectangle_get_top\\geom_rectangle_get_top.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4b22c410-3a98-4ffd-bc5b-703d6e33c5a0",
-            "Value": {
-                "id": "a28e4412-7803-45e8-8e18-06f88204791d",
-                "resourcePath": "scripts\\slice_index\\slice_index.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4fec1a12-51ac-4e7e-9d7b-a6253238791f",
-            "Value": {
-                "id": "f2187314-052d-4da5-a477-20d717058b72",
-                "resourcePath": "scripts\\geom_point_subtract\\geom_point_subtract.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "50f09efe-f8f8-4268-8209-36740bd1bc5f",
-            "Value": {
-                "id": "1650cd94-16bc-45e5-9b7f-1e30a3159e2e",
-                "resourcePath": "scripts\\array_hx_iterator_create\\array_hx_iterator_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "511fb9b6-5cae-4cc3-93f9-8e47d61cecb9",
-            "Value": {
-                "id": "a2669cfc-dfec-41c7-b140-fd55a07f7f4e",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_has_next\\events__event_dispatcher_dispatch_iterator_has_next.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "527c20d4-7ab3-46a9-9524-a8576cc98c36",
-            "Value": {
-                "id": "e3561d54-1d2e-403e-a3a6-b8458c535eb3",
-                "resourcePath": "scripts\\geom_rectangle_get_left\\geom_rectangle_get_left.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "531b82b8-4c0e-4bb0-9db4-b438e05e2e19",
-            "Value": {
-                "id": "f2f2dcf1-1771-41e7-a694-deb7c51824bf",
-                "resourcePath": "scripts\\dispatcher___add_listener_by_priority\\dispatcher___add_listener_by_priority.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "533e7db5-f01a-412c-a9d2-e91562304eb9",
-            "Value": {
-                "id": "dde6509b-0fcd-4b66-9911-b58770181a78",
-                "resourcePath": "scripts\\slice_pop\\slice_pop.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5656ee4a-f9d4-4bde-87c5-f86bfd47f01c",
-            "Value": {
-                "id": "7aa3bb37-7511-4221-b790-cfea78cd7cfe",
-                "resourcePath": "scripts\\geom_rectangle_intersection\\geom_rectangle_intersection.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "57bee525-0bd2-4c3f-9a6e-8d3ff598f1e2",
-            "Value": {
-                "id": "708d63f8-f61b-408d-a366-5a25e3b45dfb",
-                "resourcePath": "scripts\\geom_rectangle_get_bottom_right\\geom_rectangle_get_bottom_right.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "58aa892a-93aa-43ef-8ceb-ea4eb6632e02",
-            "Value": {
-                "id": "b802a0aa-d1e3-4164-a2b2-1f3c4b624357",
-                "resourcePath": "scripts\\events_event_create\\events_event_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5b6dc016-c4cf-4fc9-9e9b-1a42a71dc9d8",
-            "Value": {
-                "id": "bf3330a0-4702-4d87-8bf0-3d2385eb6e05",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_next\\events__event_dispatcher_dispatch_iterator_next.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -551,59 +127,11 @@
             }
         },
         {
-            "Key": "5ccd700d-cad8-487c-b619-0f0c0d0df4e5",
-            "Value": {
-                "id": "cd63f5f8-a763-421d-8ba1-6a3c94266373",
-                "resourcePath": "scripts\\dispatcher_to_string\\dispatcher_to_string.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5de4c492-2092-45b5-9647-bae7b8ca6595",
-            "Value": {
-                "id": "7d96bdaf-9e73-462f-9e81-2924f01673e0",
-                "resourcePath": "scripts\\geom_rectangle_equals\\geom_rectangle_equals.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5ec1a906-e786-4cf8-b9d9-3b6bdf3894e6",
-            "Value": {
-                "id": "e996aa17-c606-44c9-9bb2-a204a722ec3c",
-                "resourcePath": "scripts\\slice_string\\slice_string.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5f856c57-4317-47c3-be3c-5772c96a4e22",
-            "Value": {
-                "id": "426ce0ff-6589-4348-9c12-6b3e3be6ec42",
-                "resourcePath": "scripts\\haxe_class_create\\haxe_class_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "5fddbb8f-5695-483b-818b-b957bdfde56c",
             "Value": {
                 "id": "17991246-32c0-45cb-ae22-767ec3de6d61",
                 "resourcePath": "views\\5fddbb8f-5695-483b-818b-b957bdfde56c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "61ad2f4d-59b4-4352-8e90-a7047fb0c089",
-            "Value": {
-                "id": "29511f5c-35c4-4f52-81b7-460660935f0c",
-                "resourcePath": "scripts\\dispatcher_will_trigger\\dispatcher_will_trigger.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "636b6db2-44b6-4083-806f-8a2c57a40c8a",
-            "Value": {
-                "id": "ce8b8b09-06ac-4a6e-becd-0f360bcb6353",
-                "resourcePath": "scripts\\geom_rectangle_set_top\\geom_rectangle_set_top.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -631,83 +159,11 @@
             }
         },
         {
-            "Key": "66b75408-6271-406f-8f45-74262b38f3b9",
-            "Value": {
-                "id": "81749fe1-d0e5-460e-9e81-8bc2a05a5d63",
-                "resourcePath": "scripts\\geom_rectangle_get_size\\geom_rectangle_get_size.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "67495b72-aa26-4ba8-a6cc-68d5d4ba12a7",
-            "Value": {
-                "id": "3814c3bf-6623-4d7d-8746-743806133264",
-                "resourcePath": "scripts\\geom_rectangle_contains_point\\geom_rectangle_contains_point.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "68b1ed11-3b10-4c0e-9b6a-b62d729da673",
-            "Value": {
-                "id": "84069821-dee3-4e34-b1d9-0ed630d2ac0d",
-                "resourcePath": "scripts\\geom_rectangle_get_right\\geom_rectangle_get_right.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "6a538511-1929-49a4-95a1-3380fad1e35d",
-            "Value": {
-                "id": "afda9ea7-b118-4402-8aec-70969f607b00",
-                "resourcePath": "scripts\\array_hx_concat\\array_hx_concat.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "6af80e82-a34b-4061-a0d7-b58a0a92a1f1",
-            "Value": {
-                "id": "2b17b688-d5d6-4c1d-b1e6-d4daa23242aa",
-                "resourcePath": "scripts\\geom_rectangle_get_bottom\\geom_rectangle_get_bottom.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6b189a54-172e-4bdc-bb00-7a8897d1932c",
             "Value": {
                 "id": "25e574fe-1211-43c7-af2d-34fb9cab1165",
                 "resourcePath": "views\\6b189a54-172e-4bdc-bb00-7a8897d1932c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "6d7f436e-5832-4666-9a0b-c63ebc701d75",
-            "Value": {
-                "id": "db14950a-3ed0-4f7f-92cf-01b4521971ab",
-                "resourcePath": "scripts\\haxe_boot_wset\\haxe_boot_wset.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "6ea14ff9-28b9-4e85-9d90-1ae23aa8dd03",
-            "Value": {
-                "id": "0218dd3c-a71a-49b3-8a66-343b989eb472",
-                "resourcePath": "scripts\\events_event_is_default_prevented\\events_event_is_default_prevented.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "6ed0002e-f4c0-49c6-9568-f4b81dff5e61",
-            "Value": {
-                "id": "f9b3bd1a-cafe-413e-8d78-72e49f8b3ae5",
-                "resourcePath": "scripts\\slice_remove\\slice_remove.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "702cad90-e6e7-4f29-a9ba-a09a438e7a99",
-            "Value": {
-                "id": "fc749f9a-6a46-4d27-83b1-befb617775f8",
-                "resourcePath": "scripts\\haxe_ds_string_map_set\\haxe_ds_string_map_set.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -727,34 +183,10 @@
             }
         },
         {
-            "Key": "770cdc5b-0dbc-4b3b-a8b0-ec9e25cf3cf3",
-            "Value": {
-                "id": "a0cf4015-b440-45d2-ade5-afe771350a76",
-                "resourcePath": "scripts\\geom_point_distance\\geom_point_distance.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "78fa283d-e653-4ea6-905b-65c4d6482cbf",
             "Value": {
                 "id": "7553b85f-d4c7-4a5a-b6fb-5071dc655b2f",
                 "resourcePath": "scripts\\pass\\pass.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7a46ba85-7650-42d4-82ca-ea1b0fea8fa1",
-            "Value": {
-                "id": "3942822d-0b44-48e2-8653-35fc8fafb623",
-                "resourcePath": "scripts\\testcode_geom_rectangle_test\\testcode_geom_rectangle_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7c93e536-fb5e-45f5-b231-61b36e05f0ce",
-            "Value": {
-                "id": "3783a946-0fac-485a-9fb2-bdc9c4bf8f60",
-                "resourcePath": "scripts\\geom_rectangle_inflate_point\\geom_rectangle_inflate_point.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -767,27 +199,11 @@
             }
         },
         {
-            "Key": "7eb0c6fa-0875-4c21-8505-52127744056b",
+            "Key": "7f8d13ca-f3eb-4932-b0a4-ea2a9fd83e4e",
             "Value": {
-                "id": "ce4d543e-61ed-47f7-87cd-c628468213b6",
-                "resourcePath": "scripts\\geom_rectangle_set_empty\\geom_rectangle_set_empty.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "805e573c-6220-4af7-815a-46c47b099d8e",
-            "Value": {
-                "id": "cb09fd26-fd09-4b3c-943d-8e10e5207dee",
-                "resourcePath": "scripts\\geom_point_normalize\\geom_point_normalize.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "826a2b68-1e80-44c2-98e2-fce1a2f737f2",
-            "Value": {
-                "id": "fc27d39e-2836-4bc7-ab83-cb81fb894748",
-                "resourcePath": "scripts\\events_event_stop_propagation\\events_event_stop_propagation.yy",
-                "resourceType": "GMScript"
+                "id": "33758455-bf02-43e2-920c-37ff60ab076a",
+                "resourcePath": "extensions\\ext_fairy\\ext_fairy.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -799,38 +215,6 @@
             }
         },
         {
-            "Key": "85ac3575-8294-4993-ae65-d3bf5b1ab908",
-            "Value": {
-                "id": "df44e8e6-b33b-4cbd-b746-ce0128fa98bf",
-                "resourcePath": "scripts\\geom_point_polar\\geom_point_polar.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "860dc9f9-1396-4fc7-850c-b47f1e598a28",
-            "Value": {
-                "id": "73ccfe0d-20e9-4b71-a55a-7c08aa789e7c",
-                "resourcePath": "scripts\\slice_insert\\slice_insert.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "87534ee2-74df-4bdf-8e41-cf990db35cd8",
-            "Value": {
-                "id": "ffd26b89-3ee8-4b9f-bd36-c834fcbc8cd3",
-                "resourcePath": "scripts\\slice_create\\slice_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "88713e38-67a3-45ed-8687-efb4e62837e1",
-            "Value": {
-                "id": "5e934b56-3ab9-4b6d-9cda-3bf2b95115f9",
-                "resourcePath": "scripts\\slice_map\\slice_map.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "88898e81-59e6-4168-8895-2fca4716a6f1",
             "Value": {
                 "id": "5a3a5913-963a-4215-be42-6ce3d4f940af",
@@ -839,50 +223,10 @@
             }
         },
         {
-            "Key": "88ccf46e-36fb-4f79-bda2-4fdd9f762fea",
-            "Value": {
-                "id": "ee687b03-58de-4fb6-a218-845ed114f7ce",
-                "resourcePath": "scripts\\events__event_dispatcher_listener_create\\events__event_dispatcher_listener_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "89083293-2999-49fb-af51-4150addf337a",
-            "Value": {
-                "id": "ffd7ce67-2625-4b6a-88dd-c0a1c9cd8997",
-                "resourcePath": "scripts\\geom_rectangle_contains\\geom_rectangle_contains.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "8969c4fc-3b4a-466c-b7e5-8d3cb4ebad9a",
-            "Value": {
-                "id": "81ad0deb-6ab1-4b4b-8cd5-7f3f1b341884",
-                "resourcePath": "scripts\\dispatcher_has\\dispatcher_has.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "8a9c2827-08f0-41a5-a54e-9ac942656d4b",
             "Value": {
                 "id": "ee939dff-1f45-44bf-a45a-437d7442e6ae",
                 "resourcePath": "scripts\\@__view_get\\__view_get.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "8de03560-b255-4e08-9973-f2769c0bd88a",
-            "Value": {
-                "id": "e79e53a3-f9e9-4f45-a12b-084d8b6174ef",
-                "resourcePath": "scripts\\slice_filter\\slice_filter.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "8e2f1786-5b9a-495d-9d6b-b436eaacca51",
-            "Value": {
-                "id": "20a3e239-b6ac-4f14-962d-a690545029af",
-                "resourcePath": "scripts\\dispatcher___dispatch_event\\dispatcher___dispatch_event.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -895,107 +239,11 @@
             }
         },
         {
-            "Key": "944cf9c7-1643-496a-bad5-7c90af454022",
-            "Value": {
-                "id": "213ff099-aa77-493e-ad13-15ce90febd5e",
-                "resourcePath": "scripts\\testcode_events_events_test_test_cb\\testcode_events_events_test_test_cb.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "94728ab6-0c6f-4a20-be89-2c41c295f7dd",
-            "Value": {
-                "id": "98b2536b-a885-4649-b274-3fa237cf445d",
-                "resourcePath": "scripts\\geom_point_interpolate\\geom_point_interpolate.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "95647231-da62-447f-b65e-e26541efb4c3",
-            "Value": {
-                "id": "e1df2175-0cff-40e2-aa0a-7d3ab8a2e208",
-                "resourcePath": "scripts\\array_hx_iterator_has_next\\array_hx_iterator_has_next.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "958f2eaf-8e36-454e-8779-b69ed164621c",
-            "Value": {
-                "id": "f2ec33ac-8195-40f1-9678-9ae18ad1bbfc",
-                "resourcePath": "scripts\\dispatcher_create\\dispatcher_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "98b865ed-7a7a-4295-a880-4b5143fe5a58",
-            "Value": {
-                "id": "3819c4eb-3e29-4c22-b408-7978a09b7869",
-                "resourcePath": "scripts\\geom_rectangle_union\\geom_rectangle_union.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "99716ed6-56c8-48b4-aefd-47979127be3f",
-            "Value": {
-                "id": "7233686a-abf9-4bc4-99d1-cbd29f91bb93",
-                "resourcePath": "scripts\\fairy_test_init\\fairy_test_init.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "9b7cf776-4602-4307-89c8-14cbcbab0a87",
-            "Value": {
-                "id": "14425f68-c169-41b9-b54b-e02c97dcbb68",
-                "resourcePath": "scripts\\events_event_clone\\events_event_clone.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "9d1d1577-a19f-4add-a34b-71eaee0676c0",
-            "Value": {
-                "id": "6e998c31-adff-406f-82f9-c7f93a8e6caf",
-                "resourcePath": "scripts\\slice_join\\slice_join.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "9ea1310d-7aa0-4083-a9e9-5fef79689b7b",
-            "Value": {
-                "id": "64f3ed33-7d50-4b2e-b966-c3e0667d2904",
-                "resourcePath": "scripts\\geom_point_equals\\geom_point_equals.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a082a4f6-3706-4377-9665-20cd3f577475",
-            "Value": {
-                "id": "8a7753cb-25ec-42ff-994b-f86208c0332d",
-                "resourcePath": "scripts\\array_hx_unshift\\array_hx_unshift.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "cebeff79-7d98-4b1d-a15c-a40c4e7dc4b8",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
-            }
-        },
-        {
-            "Key": "a1419db4-f6ce-470a-8b4a-23b8e9b42c4c",
-            "Value": {
-                "id": "7f4e2428-c6ba-443a-80c4-2314b5e6b843",
-                "resourcePath": "scripts\\geom_rectangle_offset_point\\geom_rectangle_offset_point.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a195a394-2985-4f01-a697-118ab1c5f57d",
-            "Value": {
-                "id": "836ed9ad-96e6-4604-bfde-4934e672585e",
-                "resourcePath": "scripts\\testcode_support_slice_test_test_map_func\\testcode_support_slice_test_test_map_func.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1007,43 +255,11 @@
             }
         },
         {
-            "Key": "a2b90646-b2f7-45c5-80e4-54c7d7e3f9eb",
-            "Value": {
-                "id": "8b338b0e-e559-4d5c-af3e-d56f281f16cb",
-                "resourcePath": "scripts\\geom_rectangle_set_bottom_right\\geom_rectangle_set_bottom_right.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "a51b8d8a-334c-41c0-9987-3aa8fad13718",
             "Value": {
                 "id": "d9a44076-9726-42ac-bd3a-0bcb9c6c6df6",
                 "resourcePath": "rooms\\test_room\\test_room.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "a5831b0d-cbed-4152-81da-6b3a6d055a66",
-            "Value": {
-                "id": "60622026-dc19-4961-845d-3f08f2592346",
-                "resourcePath": "scripts\\haxe_boot_wget\\haxe_boot_wget.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a5894d2d-c498-4afb-97a4-d386b3dd195d",
-            "Value": {
-                "id": "3a9bc04b-423b-4ebf-ba13-4777f49a54ba",
-                "resourcePath": "scripts\\haxe_ds_string_map_remove\\haxe_ds_string_map_remove.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a6d47816-b8ca-434e-a5f1-d1d74068cdf4",
-            "Value": {
-                "id": "caf4d81d-1d52-483c-b4e6-b9e1fce3a9a0",
-                "resourcePath": "scripts\\geom_rectangle_inflate\\geom_rectangle_inflate.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1055,82 +271,10 @@
             }
         },
         {
-            "Key": "ab2a38f8-8173-403c-8a8a-47bc96808700",
-            "Value": {
-                "id": "9013b40f-b2cd-4a04-ab98-9da930f75e48",
-                "resourcePath": "scripts\\slice_splice\\slice_splice.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "abf60374-2ee0-45b7-ab9e-ed478a882c6b",
-            "Value": {
-                "id": "a8fe87ef-b971-4c3f-a0ec-92a96b6c1397",
-                "resourcePath": "scripts\\array_hx_iterator_next\\array_hx_iterator_next.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "aecbeff7-a86d-4ef8-97ed-2a9e7e2d9e00",
-            "Value": {
-                "id": "c88ccbb8-835e-468e-8bdc-c700b327e7a5",
-                "resourcePath": "scripts\\haxe_ds_basic_map_raw_prepare\\haxe_ds_basic_map_raw_prepare.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "b1be853e-31be-4603-af30-ab62ee02fca3",
-            "Value": {
-                "id": "c5aa4bfa-a24a-44d5-80f3-ed5963a25566",
-                "resourcePath": "scripts\\slice_slice\\slice_slice.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "b2b04956-be47-44ff-ab27-26a55f6b101c",
-            "Value": {
-                "id": "299332b2-5aae-4797-a120-8fc668af5175",
-                "resourcePath": "scripts\\dispatcher___remove_all_listeners\\dispatcher___remove_all_listeners.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "b309f8ef-cfe6-492d-93aa-cb318fe9c299",
-            "Value": {
-                "id": "458addde-01cb-4cde-a0d9-7a636148678e",
-                "resourcePath": "scripts\\array_hx_reverse\\array_hx_reverse.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "b4a32212-52ff-47bb-ab84-148d1b212093",
-            "Value": {
-                "id": "659431d1-ceda-494f-b6ad-8e3259eaf644",
-                "resourcePath": "scripts\\geom_rectangle_to_string\\geom_rectangle_to_string.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b5498f2e-7c7b-45bd-86d8-4e269905af59",
             "Value": {
                 "id": "5bb19611-c9e0-4258-aa62-8af0904a8318",
                 "resourcePath": "scripts\\trace\\trace.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "b86f66df-33f5-49bb-ba34-b2d3e962baec",
-            "Value": {
-                "id": "472a5fbb-d66c-4332-b0c1-a4fa0cced1ef",
-                "resourcePath": "scripts\\dispatcher_remove\\dispatcher_remove.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "bb73165c-658f-4ea8-8315-7d6b8524bfe8",
-            "Value": {
-                "id": "8740a97f-81f6-4b57-9ec9-6f71eafcdec2",
-                "resourcePath": "scripts\\haxe_ds_string_map_exists\\haxe_ds_string_map_exists.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1151,30 +295,6 @@
             }
         },
         {
-            "Key": "be677139-5b85-4445-b2c1-2af6ed0322e8",
-            "Value": {
-                "id": "18069aad-5d63-4ff2-9b6f-6d1a6500ba18",
-                "resourcePath": "scripts\\geom_rectangle_set_left\\geom_rectangle_set_left.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "be848588-6526-43b8-a46e-0b0ed290b705",
-            "Value": {
-                "id": "ded4e477-cf23-49fd-a56b-1c2cbb354311",
-                "resourcePath": "scripts\\testcode_geom_point_test\\testcode_geom_point_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c26c8e00-a09b-4654-b4e4-963475a42ba3",
-            "Value": {
-                "id": "07eeb2ef-55ad-4bbb-95a5-748b0e0a4623",
-                "resourcePath": "scripts\\geom_point_create\\geom_point_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c2b6f263-43f0-49f0-833f-19f8bf03e8cc",
             "Value": {
                 "id": "0c6d76fe-7f84-40f4-bead-e352e502dc9b",
@@ -1183,35 +303,11 @@
             }
         },
         {
-            "Key": "c92cb8f3-0aad-48e6-bd4c-d4f998f9b6f9",
-            "Value": {
-                "id": "d91c15ca-2079-407e-bcb2-185c54fbd761",
-                "resourcePath": "scripts\\slice_get\\slice_get.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "cb1d6b9f-a036-4a0a-8a52-6923dfb78d34",
             "Value": {
                 "id": "dc93eb3e-f086-42fb-b1ce-8f20f229b006",
                 "resourcePath": "views\\cb1d6b9f-a036-4a0a-8a52-6923dfb78d34.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "cbbd0b7f-db60-45a0-9f4c-9aa63508993d",
-            "Value": {
-                "id": "a0f7b3f8-402e-49ad-806f-4027a56f8ac0",
-                "resourcePath": "scripts\\array_hx_filter\\array_hx_filter.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "cc87784d-c402-48b1-84aa-63acf63deb2f",
-            "Value": {
-                "id": "6ed879db-ed10-4ef4-b8cf-98563ba6e684",
-                "resourcePath": "scripts\\slice_hx_iterator_create\\slice_hx_iterator_create.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1239,66 +335,10 @@
             }
         },
         {
-            "Key": "d0f1093b-b942-440b-84ca-2e0c52f94b29",
-            "Value": {
-                "id": "7160ace8-79b1-48c4-bcb3-d7026f5610a1",
-                "resourcePath": "scripts\\events_event_to_string\\events_event_to_string.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d2d30179-2dfe-4470-ab37-0dd6fea1f749",
-            "Value": {
-                "id": "5f38306b-77cc-4074-837a-edf7246147df",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_copy\\events__event_dispatcher_dispatch_iterator_copy.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d39b39d5-bde0-499b-8125-f5ed20703aa7",
-            "Value": {
-                "id": "3b7a2bb6-b992-447f-bf52-1eccaa831bff",
-                "resourcePath": "scripts\\events__event_dispatcher_listener_match\\events__event_dispatcher_listener_match.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d4b4420b-fc33-42b9-aa53-f34b134e4c27",
-            "Value": {
-                "id": "58333404-343b-4770-86f3-fe1ec4d20a0b",
-                "resourcePath": "scripts\\haxe_ds_basic_map_create\\haxe_ds_basic_map_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d4b763ef-3944-40d1-b5c0-cb445fda0785",
             "Value": {
                 "id": "2d156ff0-0768-403e-8d60-b07da5122bf4",
                 "resourcePath": "scripts\\draw_test\\draw_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d572d115-0fc9-453b-a8ec-d236077944aa",
-            "Value": {
-                "id": "04f1a552-24ae-4a92-9f53-ee6f1d98b919",
-                "resourcePath": "scripts\\haxe_boot_get_class\\haxe_boot_get_class.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d86ff992-1823-46da-84ff-1f57e6c12917",
-            "Value": {
-                "id": "9e91394f-518f-41f6-9a2d-e4bc8e2401f7",
-                "resourcePath": "scripts\\array_hx_indexOf\\array_hx_indexOf.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d8e78f53-7b7f-4ae8-9302-2757c05bc479",
-            "Value": {
-                "id": "39e74be1-f6f6-4067-8060-e0a4e3c27e1a",
-                "resourcePath": "scripts\\slice_last_index\\slice_last_index.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1311,26 +351,10 @@
             }
         },
         {
-            "Key": "d918e761-7229-414e-a495-1c30fd6d8911",
-            "Value": {
-                "id": "7e04d5bf-0101-44bc-bb16-e08a687c68dc",
-                "resourcePath": "scripts\\array_hx_sort\\array_hx_sort.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "db9cad0b-8dda-42f3-9c9a-3a0e0988d9c8",
             "Value": {
                 "id": "c511feab-c1ea-41d0-8195-dfdf822d69a5",
                 "resourcePath": "scripts\\hobo_init\\hobo_init.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "dbdd18e4-64e7-43e7-a7e5-6bce341c448e",
-            "Value": {
-                "id": "bd6571b9-0feb-4725-9a50-c8faf73c4122",
-                "resourcePath": "scripts\\haxe_ds_string_map_create\\haxe_ds_string_map_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1343,91 +367,11 @@
             }
         },
         {
-            "Key": "de1c1b06-8f68-410e-8597-7a6133070e83",
-            "Value": {
-                "id": "46b1630a-b4b6-4d94-8924-80a4586703d3",
-                "resourcePath": "scripts\\geom_point_set_to\\geom_point_set_to.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "df3cc600-52d2-4804-b02f-d7b82b62ca54",
-            "Value": {
-                "id": "0d9cc6fa-f07a-4d00-8618-10463bc225a6",
-                "resourcePath": "scripts\\geom_point_add\\geom_point_add.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e3b3ffec-8bae-4650-a276-1824f905c886",
-            "Value": {
-                "id": "2ef79bfe-dc69-4589-b2c4-be340521c62d",
-                "resourcePath": "scripts\\slice_push\\slice_push.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "eef8093e-0e8c-488b-a664-b796320c8329",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
-            }
-        },
-        {
-            "Key": "e978b642-d737-4171-86a7-3fd69694dfbd",
-            "Value": {
-                "id": "e72af9d2-1672-4969-9fb9-a77c8df14b68",
-                "resourcePath": "scripts\\slice_reverse\\slice_reverse.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "eb3a7f22-e709-4fdd-a766-eb50678e845f",
-            "Value": {
-                "id": "7e128ed4-79e6-4af9-8231-028139bac15d",
-                "resourcePath": "scripts\\array_hx_push\\array_hx_push.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ec63334c-62f0-46c6-b7f3-9efa7e718772",
-            "Value": {
-                "id": "b05bd823-0f95-4c00-b6e3-21d2386cd6c7",
-                "resourcePath": "scripts\\array_hx_insert\\array_hx_insert.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ecb7e593-47df-4e90-81b6-977e9092e89e",
-            "Value": {
-                "id": "3d31be93-1936-42d5-b276-39eda37345ed",
-                "resourcePath": "scripts\\array_hx_map\\array_hx_map.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "edcc28bb-831f-4770-866a-97a55fbf30f9",
-            "Value": {
-                "id": "79303233-24a7-4ead-b6cd-6a2aac162108",
-                "resourcePath": "scripts\\array_hx_lastIndexOf\\array_hx_lastIndexOf.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f0156715-a33a-4c2f-9e7f-405af115f9a0",
-            "Value": {
-                "id": "980f9834-e31e-44dc-a416-c5e73d5ab1ed",
-                "resourcePath": "scripts\\array_hx_slice\\array_hx_slice.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f2bd680e-7e80-4707-8406-3210eea34a82",
-            "Value": {
-                "id": "9f54ada1-e60d-46e8-b29a-b39fee17423c",
-                "resourcePath": "scripts\\slice_shift\\slice_shift.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1439,14 +383,6 @@
             }
         },
         {
-            "Key": "f4bc3b6f-2945-423e-981f-fb897241eed1",
-            "Value": {
-                "id": "68596607-1feb-4c99-a5c2-c5a53e8851a9",
-                "resourcePath": "scripts\\events__event_dispatcher_dispatch_iterator_reset\\events__event_dispatcher_dispatch_iterator_reset.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f53a69b4-c949-4606-b917-8e3629eee8bf",
             "Value": {
                 "id": "e1b5454b-e818-4514-85a4-9492f2dca176",
@@ -1455,59 +391,11 @@
             }
         },
         {
-            "Key": "f5d10ba3-4b90-4385-89e6-8758645210d2",
-            "Value": {
-                "id": "a1eee6f7-3257-41ae-ba69-ee31eb921b75",
-                "resourcePath": "scripts\\geom_rectangle_contains_rect\\geom_rectangle_contains_rect.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f7f7cc74-f1ab-466d-b837-e836224dbd70",
-            "Value": {
-                "id": "dabdee23-79b4-4838-8b07-f4772499463c",
-                "resourcePath": "scripts\\slice_concat\\slice_concat.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f805c9ae-9fa8-49ff-9667-f82e67a18e92",
-            "Value": {
-                "id": "c1b0e0ad-f9d1-4c50-a335-1a8e4685e24a",
-                "resourcePath": "scripts\\dispatcher_emit\\dispatcher_emit.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f85efd3d-bcec-4ec0-8226-da808afda79d",
             "Value": {
                 "id": "cf0d87f9-c145-4f94-b889-806a8bc8ce84",
                 "resourcePath": "options\\xboxone\\options_xboxone.yy",
                 "resourceType": "GMXBoxOneOptions"
-            }
-        },
-        {
-            "Key": "f87a9320-6d2c-4629-b38e-48e34ebbcf8d",
-            "Value": {
-                "id": "248801c2-320f-459e-94f8-2b7d7f34bc54",
-                "resourcePath": "scripts\\slice_set\\slice_set.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f9b663d9-869d-4ade-b258-67996d7c64cf",
-            "Value": {
-                "id": "4fe663b0-0b3b-44d0-bc7d-e05506a50835",
-                "resourcePath": "scripts\\geom_point_copy_from\\geom_point_copy_from.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "fb943dcf-a309-452d-bcec-07848c00f2e2",
-            "Value": {
-                "id": "a0731a0b-ffd2-4dd9-8d5a-39f2674cf29e",
-                "resourcePath": "scripts\\array_hx_join\\array_hx_join.yy",
-                "resourceType": "GMScript"
             }
         }
     ],
@@ -1522,146 +410,6 @@
         "8a9c2827-08f0-41a5-a54e-9ac942656d4b",
         "103eaaaa-778f-4352-a95d-1a359bb6be61",
         "d912ef5b-ddb6-4a1e-a38f-8346a615440a",
-        "95647231-da62-447f-b65e-e26541efb4c3",
-        "abf60374-2ee0-45b7-ab9e-ed478a882c6b",
-        "fb943dcf-a309-452d-bcec-07848c00f2e2",
-        "edcc28bb-831f-4770-866a-97a55fbf30f9",
-        "ecb7e593-47df-4e90-81b6-977e9092e89e",
-        "eb3a7f22-e709-4fdd-a766-eb50678e845f",
-        "b309f8ef-cfe6-492d-93aa-cb318fe9c299",
-        "f0156715-a33a-4c2f-9e7f-405af115f9a0",
-        "d918e761-7229-414e-a495-1c30fd6d8911",
-        "a082a4f6-3706-4377-9665-20cd3f577475",
-        "531b82b8-4c0e-4bb0-9db4-b438e05e2e19",
-        "8e2f1786-5b9a-495d-9d6b-b436eaacca51",
-        "b2b04956-be47-44ff-ab27-26a55f6b101c",
-        "2fe94ab5-451a-4df9-b675-617621b24352",
-        "958f2eaf-8e36-454e-8779-b69ed164621c",
-        "f805c9ae-9fa8-49ff-9667-f82e67a18e92",
-        "8969c4fc-3b4a-466c-b7e5-8d3cb4ebad9a",
-        "b86f66df-33f5-49bb-ba34-b2d3e962baec",
-        "25f2052a-5ae1-4524-8fc3-f90055c441c0",
-        "5ccd700d-cad8-487c-b619-0f0c0d0df4e5",
-        "61ad2f4d-59b4-4352-8e90-a7047fb0c089",
-        "d2d30179-2dfe-4470-ab37-0dd6fea1f749",
-        "41a1f3a6-b8fe-40f2-aa5a-4f9508644cf7",
-        "511fb9b6-5cae-4cc3-93f9-8e47d61cecb9",
-        "5b6dc016-c4cf-4fc9-9e9b-1a42a71dc9d8",
-        "15fb95d5-114b-46b5-9c00-e8b6565e2d30",
-        "f4bc3b6f-2945-423e-981f-fb897241eed1",
-        "14e0720d-ac6f-490b-b949-124eaa533947",
-        "075eab28-bfdf-4013-adb7-ab81fdf75106",
-        "88ccf46e-36fb-4f79-bda2-4fdd9f762fea",
-        "d39b39d5-bde0-499b-8125-f5ed20703aa7",
-        "9b7cf776-4602-4307-89c8-14cbcbab0a87",
-        "58aa892a-93aa-43ef-8ceb-ea4eb6632e02",
-        "6ea14ff9-28b9-4e85-9d90-1ae23aa8dd03",
-        "3cad4f0e-9164-41d2-ae27-c898a62ab481",
-        "25fbe8b7-0abd-458d-8d74-4548fd861030",
-        "826a2b68-1e80-44c2-98e2-fce1a2f737f2",
-        "d0f1093b-b942-440b-84ca-2e0c52f94b29",
-        "99716ed6-56c8-48b4-aefd-47979127be3f",
-        "021ca199-b642-45f9-b74b-c1407f611bce",
-        "df3cc600-52d2-4804-b02f-d7b82b62ca54",
-        "3cca1784-a7e0-476a-931f-7ead79048381",
-        "f9b663d9-869d-4ade-b258-67996d7c64cf",
-        "c26c8e00-a09b-4654-b4e4-963475a42ba3",
-        "770cdc5b-0dbc-4b3b-a8b0-ec9e25cf3cf3",
-        "9ea1310d-7aa0-4083-a9e9-5fef79689b7b",
-        "0c3dfd71-1f54-42cf-a9a0-8cf42e249b5e",
-        "94728ab6-0c6f-4a20-be89-2c41c295f7dd",
-        "805e573c-6220-4af7-815a-46c47b099d8e",
-        "0a571def-1cd5-4bae-bf32-ec2cd8708d51",
-        "85ac3575-8294-4993-ae65-d3bf5b1ab908",
-        "de1c1b06-8f68-410e-8597-7a6133070e83",
-        "4fec1a12-51ac-4e7e-9d7b-a6253238791f",
-        "333902ab-b22b-4142-add6-841c60b7d9e8",
-        "d572d115-0fc9-453b-a8ec-d236077944aa",
-        "a5831b0d-cbed-4152-81da-6b3a6d055a66",
-        "6d7f436e-5832-4666-9a0b-c63ebc701d75",
-        "5f856c57-4317-47c3-be3c-5772c96a4e22",
-        "085ff07d-a67b-49e8-a011-eb477590eb99",
-        "d4b4420b-fc33-42b9-aa53-f34b134e4c27",
-        "3f1da155-2c46-4bdc-9057-e6d0d4927a94",
-        "46dfc6bc-f7ed-48d5-aa52-8b1207251620",
-        "aecbeff7-a86d-4ef8-97ed-2a9e7e2d9e00",
-        "1881f843-602e-450f-a83e-21f0be3619ba",
-        "dbdd18e4-64e7-43e7-a7e5-6bce341c448e",
-        "bb73165c-658f-4ea8-8315-7d6b8524bfe8",
-        "06247756-95bc-4bff-acc6-8c04a7ff429d",
-        "a5894d2d-c498-4afb-97a4-d386b3dd195d",
-        "702cad90-e6e7-4f29-a9ba-a09a438e7a99",
-        "f7f7cc74-f1ab-466d-b837-e836224dbd70",
-        "2df6682f-7de3-4ad8-8593-b43cf748e9c5",
-        "87534ee2-74df-4bdf-8e41-cf990db35cd8",
-        "8de03560-b255-4e08-9973-f2769c0bd88a",
-        "c92cb8f3-0aad-48e6-bd4c-d4f998f9b6f9",
-        "cc87784d-c402-48b1-84aa-63acf63deb2f",
-        "41dfcea6-5099-43ea-a07e-0c7ec4499d00",
-        "1e443368-aedc-46cb-943f-cf8cd77df262",
-        "4b22c410-3a98-4ffd-bc5b-703d6e33c5a0",
-        "860dc9f9-1396-4fc7-850c-b47f1e598a28",
-        "2b8f7ba7-7ff6-48f0-943d-33b44dff1309",
-        "9d1d1577-a19f-4add-a34b-71eaee0676c0",
-        "d8e78f53-7b7f-4ae8-9302-2757c05bc479",
-        "30e35862-0b08-4783-9a80-8ee27a56dbf9",
-        "88713e38-67a3-45ed-8687-efb4e62837e1",
-        "533e7db5-f01a-412c-a9d2-e91562304eb9",
-        "e3b3ffec-8bae-4650-a276-1824f905c886",
-        "6ed0002e-f4c0-49c6-9568-f4b81dff5e61",
-        "e978b642-d737-4171-86a7-3fd69694dfbd",
-        "f87a9320-6d2c-4629-b38e-48e34ebbcf8d",
-        "1483aa7e-4cb9-4fc3-ad4a-b325a61683e1",
-        "f2bd680e-7e80-4707-8406-3210eea34a82",
-        "b1be853e-31be-4603-af30-ab62ee02fca3",
-        "216cf622-a40d-4522-bb89-de306832265b",
-        "ab2a38f8-8173-403c-8a8a-47bc96808700",
-        "5ec1a906-e786-4cf8-b9d9-3b6bdf3894e6",
-        "0879f04d-1fc3-4274-81e9-fcd5b163c78e",
-        "7a46ba85-7650-42d4-82ca-ea1b0fea8fa1",
-        "455ae309-b823-444c-9ad6-db0a45dda160",
-        "944cf9c7-1643-496a-bad5-7c90af454022",
-        "be848588-6526-43b8-a46e-0b0ed290b705",
-        "32d6cbd0-711e-410e-b899-2897e4851987",
-        "a195a394-2985-4f01-a697-118ab1c5f57d",
-        "6a538511-1929-49a4-95a1-3380fad1e35d",
-        "2083410b-6ad1-4cb9-9eef-c4ecaac86fd5",
-        "cbbd0b7f-db60-45a0-9f4c-9aa63508993d",
-        "d86ff992-1823-46da-84ff-1f57e6c12917",
-        "ec63334c-62f0-46c6-b7f3-9efa7e718772",
-        "50f09efe-f8f8-4268-8209-36740bd1bc5f",
-        "89083293-2999-49fb-af51-4150addf337a",
-        "67495b72-aa26-4ba8-a6cc-68d5d4ba12a7",
-        "f5d10ba3-4b90-4385-89e6-8758645210d2",
-        "469309ae-6497-4c2b-8224-c7121798b915",
-        "05752684-872c-47dd-b8f1-a104c4f86827",
-        "5de4c492-2092-45b5-9647-bae7b8ca6595",
-        "6af80e82-a34b-4061-a0d7-b58a0a92a1f1",
-        "57bee525-0bd2-4c3f-9a6e-8d3ff598f1e2",
-        "527c20d4-7ab3-46a9-9524-a8576cc98c36",
-        "68b1ed11-3b10-4c0e-9b6a-b62d729da673",
-        "66b75408-6271-406f-8f45-74262b38f3b9",
-        "49f95c2b-5d7c-4f3d-b044-07b85fdca9d6",
-        "3d886044-6a16-4e9c-b1fc-e2385003d086",
-        "a6d47816-b8ca-434e-a5f1-d1d74068cdf4",
-        "7c93e536-fb5e-45f5-b231-61b36e05f0ce",
-        "5656ee4a-f9d4-4bde-87c5-f86bfd47f01c",
-        "236bc0f7-0f93-42bd-b542-6948f734bde8",
-        "4588bdd0-d759-4dc8-85ec-068529aafcad",
-        "2a857d68-bce7-48e5-a181-ab6a48c0e779",
-        "a1419db4-f6ce-470a-8b4a-23b8e9b42c4c",
-        "26a4084d-17c0-481d-9375-79027915de67",
-        "a2b90646-b2f7-45c5-80e4-54c7d7e3f9eb",
-        "7eb0c6fa-0875-4c21-8505-52127744056b",
-        "be677139-5b85-4445-b2c1-2af6ed0322e8",
-        "36d80724-bc7c-4730-83e0-3758b54fca33",
-        "309b813d-8c6b-4e26-ae04-ff9420e63bb7",
-        "020be1cd-fad5-4bfe-9478-8959cbc33406",
-        "636b6db2-44b6-4083-806f-8a2c57a40c8a",
-        "09e4cd11-ed91-4523-b1a2-e15d65648003",
-        "b4a32212-52ff-47bb-ab84-148d1b212093",
-        "98b865ed-7a7a-4295-a880-4b5143fe5a58",
-        "1bd45b01-0290-4b42-8bbe-3d97b5c7a369",
         "b5498f2e-7c7b-45bd-86d8-4e269905af59"
     ],
     "tutorial": ""
