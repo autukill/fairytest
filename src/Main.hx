@@ -4,5 +4,6 @@ class Main {
         testcode.support.SliceTest.test();
         testcode.events.EventsTest.test();
         testcode.geom.Point.test();
+        testcode.geom.Rectangle.test();
     }
 }
