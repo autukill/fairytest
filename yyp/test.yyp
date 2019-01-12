@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "021ca199-b642-45f9-b74b-c1407f611bce",
-            "Value": {
-                "id": "fe4ee2f6-8775-493f-a5ee-486bec7594b9",
-                "resourcePath": "scripts\\fairy_test_main\\fairy_test_main.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "07357bb8-a137-4e74-8e64-042639d38904",
             "Value": {
                 "id": "b0b044e1-9089-43ab-96e1-6116642a3aba",
@@ -204,6 +196,14 @@
                 "id": "2405470f-99b1-4a27-a234-4a8408131354",
                 "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
                 "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
+            "Key": "7f8d13ca-f3eb-4932-b0a4-ea2a9fd83e4e",
+            "Value": {
+                "id": "33758455-bf02-43e2-920c-37ff60ab076a",
+                "resourcePath": "extensions\\ext_fairy\\ext_fairy.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
