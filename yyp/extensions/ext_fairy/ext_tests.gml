@@ -1,6 +1,7 @@
 #define fairy_test_init
-// Generated at 2019-01-12 23:36:13 (506ms) for v2.1.4+
+// Generated at 2019-01-18 19:02:12 (788ms) for v2.1.4+
 //{ prototypes
+globalvar mq_ntexture; mq_ntexture = [/* 0:uv_rect */undefined, /* 1:ref_count */0, /* 2:last_active */undefined, /* 3:_sprite */undefined, /* 4:_sprite_img_index */0, /* 5:_native_texture */undefined, /* 6:_root */undefined, /* 7:_region */undefined];
 globalvar mq_events_event; mq_events_event = [/* 0:bubbles */undefined, /* 1:cancelable */undefined, /* 2:current_target */undefined, /* 3:event_phase */undefined, /* 4:target */undefined, /* 5:type */undefined, /* 6:__is_canceled */undefined, /* 7:__is_canceled_now */undefined, /* 8:__prevent_default */undefined];
 globalvar mq_dispatcher; mq_dispatcher = [/* 0:__event_map */undefined, /* 1:__iterators */undefined, /* 2:__target_dispatcher */undefined];
 globalvar mq_events__event_dispatcher_dispatch_iterator; mq_events__event_dispatcher_dispatch_iterator = [/* 0:active */undefined, /* 1:index */0, /* 2:is_copy */undefined, /* 3:list */undefined];
@@ -13,22 +14,26 @@ globalvar mq_haxe_ds_string_map; mq_haxe_ds_string_map = [/* 0:table_size */0, /
 globalvar mq_slice; mq_slice = [/* 0:array */undefined];
 //}
 //{ metatype
-globalvar mt_events_event; mt_events_event = haxe_class_create(27, "events_event");
-globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(29, "dispatcher");
-globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(30, "events__event_dispatcher_dispatch_iterator");
-globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(31, "events__event_dispatcher_listener");
-globalvar mt_geom_point; mt_geom_point = haxe_class_create(33, "geom_point");
-globalvar mt_geom_rectangle; mt_geom_rectangle = haxe_class_create(34, "geom_rectangle");
-globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(41, "haxe_class");
-globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(81, "haxe_ds_basic_map");
-globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(83, "haxe_ds_string_map");
-globalvar mt_slice; mt_slice = haxe_class_create(125, "slice");
+globalvar mt_ntexture; mt_ntexture = haxe_class_create(27, "ntexture");
+globalvar mt_events_event; mt_events_event = haxe_class_create(28, "events_event");
+globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(30, "dispatcher");
+globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(31, "events__event_dispatcher_dispatch_iterator");
+globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(32, "events__event_dispatcher_listener");
+globalvar mt_geom_point; mt_geom_point = haxe_class_create(34, "geom_point");
+globalvar mt_geom_rectangle; mt_geom_rectangle = haxe_class_create(35, "geom_rectangle");
+globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(42, "haxe_class");
+globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(82, "haxe_ds_basic_map");
+globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(84, "haxe_ds_string_map");
+globalvar mt_slice; mt_slice = haxe_class_create(126, "slice");
 //}
 globalvar f_testcode_events_events_test_test_cb; f_testcode_events_events_test_test_cb = asset_get_index("testcode_events_events_test_test_cb");
 globalvar f_testcode_support_slice_test_test_map_func; f_testcode_support_slice_test_test_map_func = asset_get_index("testcode_support_slice_test_test_map_func");
 // array_hx:
 globalvar array_hx_join_buf; array_hx_join_buf = undefined;
 globalvar array_hx_filter_list; array_hx_filter_list = undefined;
+// ntexture:
+globalvar g_ntexture_empty;
+globalvar g_ntexture__empty; g_ntexture__empty = undefined;
 // events.event:
 globalvar g_events_event_activate; g_events_event_activate = "activate";
 globalvar g_events_event_added; g_events_event_added = "added";
@@ -323,6 +328,105 @@ testcode_support_slice_test_test();
 testcode_events_events_test_test();
 testcode_geom_point_test();
 testcode_geom_rectangle_test();
+testcode_core_ntexture_test_test();
+
+//}
+
+//{ ntexture
+
+#define ntexture_create_empty_texture
+/// @function ntexture_create_empty_texture()->sprite
+var surface1 = surface_create(1, 1);
+var buffer1 = buffer_create(4, 0, 1);
+buffer_fill(buffer1, 0, 1, 255, 4);
+buffer_set_surface(buffer1, surface1, 0, 0, 0);
+var spr = sprite_create_from_surface(surface1, 0, 0, 1, 1, false, false, 0, 0);
+buffer_delete(buffer1);
+surface_free(surface1);
+return spr;
+
+#define ntexture_get_empty
+/// @function ntexture_get_empty()->ntexture
+if (g_ntexture__empty == undefined) g_ntexture__empty = ntexture_create_from_sprite(ntexture_create_empty_texture());
+return g_ntexture__empty;
+
+#define ntexture_create_from_sprite
+/// @function ntexture_create_from_sprite(spr:sprite, subimg:int = 0, ?region:Rectangle, xScale:int = 1, yScale:int = 1)->ntexture
+/// @param spr:sprite
+/// @param subimg:int=0
+/// @param ?region:Rectangle
+/// @param xScale:int=1
+/// @param yScale:int=1
+var spr = argument[0], subimg, region, xScale, yScale;
+if (argument_count > 1) subimg = argument[1]; else subimg = 0;
+if (argument_count > 2) region = argument[2]; else region = undefined;
+if (argument_count > 3) xScale = argument[3]; else xScale = 1;
+if (argument_count > 4) yScale = argument[4]; else yScale = 1;
+var that = ntexture_create();
+that[@6/* _root */] = that;
+that[@3/* _sprite */] = spr;
+that[@4/* _sprite_img_index */] = subimg;
+var texture1 = sprite_get_texture(spr, subimg);
+var textureWidth = 1 / texture_get_texel_width(texture1);
+var textureHeight = 1 / texture_get_texel_height(texture1);
+that[@5/* _native_texture */] = texture1;
+if (region != undefined) {
+	that[@7/* _region */] = region;
+	that[@0/* uv_rect */] = geom_rectangle_create(region[2/* x */] / textureWidth, region[3/* y */] / textureHeight, region[1/* width */] / textureWidth, region[0/* height */] / textureHeight);
+} else {
+	that[@7/* _region */] = geom_rectangle_create(0, 0, textureWidth, textureHeight);
+	that[@0/* uv_rect */] = geom_rectangle_create(0, 0, xScale, yScale);
+}
+return that;
+
+#define ntexture_create_from_root_region
+/// @function ntexture_create_from_root_region(root:ntexture, region:Rectangle)->ntexture
+/// @param root:ntexture
+/// @param region:Rectangle
+var root = argument[0], region = argument[1];
+var that = ntexture_create();
+that[@6/* _root */] = root;
+region[@2/* x */] += haxe_boot_wget(root[7/* _region */], 2);
+region[@3/* y */] += haxe_boot_wget(root[7/* _region */], 3);
+that[@7/* _region */] = region;
+that[@0/* uv_rect */] = geom_rectangle_create(region[2/* x */] * haxe_boot_wget(root[0/* uv_rect */], 1) / ntexture_get_width(root), region[3/* y */] * haxe_boot_wget(root[0/* uv_rect */], 0) / ntexture_get_height(root), region[1/* width */] * haxe_boot_wget(root[0/* uv_rect */], 1) / ntexture_get_width(root), region[0/* height */] * haxe_boot_wget(root[0/* uv_rect */], 0) / ntexture_get_height(root));
+return that;
+
+#define ntexture_create
+/// @function ntexture_create()
+var this;
+this[1,0/* metatype */] = mt_ntexture;
+var __this = mq_ntexture;
+array_copy(this, 0, __this, 0, array_length_1d(__this));
+this[@6/* _root */] = undefined;
+this[@5/* _native_texture */] = undefined;
+this[@4/* _sprite_img_index */] = 0;
+this[@3/* _sprite */] = undefined;
+return this;
+
+#define ntexture_get_root
+/// @function ntexture_get_root(this:ntexture)->ntexture
+/// @param this:ntexture
+var this = argument[0];
+return this[6/* _root */];
+
+#define ntexture_get_width
+/// @function ntexture_get_width(this:ntexture)->real
+/// @param this:ntexture
+var this = argument[0];
+return haxe_boot_wget(this[7/* _region */], 1);
+
+#define ntexture_get_height
+/// @function ntexture_get_height(this:ntexture)->real
+/// @param this:ntexture
+var this = argument[0];
+return haxe_boot_wget(this[7/* _region */], 0);
+
+#define ntexture_get_native_texure
+/// @function ntexture_get_native_texure(this:ntexture)->texture
+/// @param this:ntexture
+var this = argument[0];
+if (this[6/* _root */] != undefined) return haxe_boot_wget(this[6/* _root */], 5); else return undefined;
 
 //}
 
@@ -1093,7 +1197,7 @@ return geom_point_clone(p);
 /// @param var_id:int
 /// @param name:string
 var this;
-this[1,0/* metatype */] = 41;
+this[1,0/* metatype */] = 42;
 var __this = mq_haxe_class;
 array_copy(this, 0, __this, 0, array_length_1d(__this));
 var var_id = argument[0], name = argument[1];
@@ -1568,6 +1672,16 @@ return this[3/* index */] < slice_length(this[2/* slice */]);
 /// @param this:slice_hx_iterator
 var this = argument[0];
 return slice_get(this[2/* slice */], this[@3/* index */]++);
+
+//}
+
+//{ testcode.core.ntexture_test
+
+#define testcode_core_ntexture_test_test
+/// @function testcode_core_ntexture_test_test()
+var empty = ntexture_create_empty_texture();
+it("create an empty sprite", true, sprite_exists(empty));
+it("texture width = 1", 1, sprite_get_width(empty));
 
 //}
 
