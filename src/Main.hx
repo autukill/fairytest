@@ -5,5 +5,6 @@ class Main {
         testcode.events.EventsTest.test();
         testcode.geom.Point.test();
         testcode.geom.Rectangle.test();
+        testcode.core.NTextureTest.test();
     }
 }
