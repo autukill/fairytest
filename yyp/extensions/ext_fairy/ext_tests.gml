@@ -1,5 +1,5 @@
 #define fairy_test_init
-// Generated at 2019-01-18 19:02:12 (788ms) for v2.1.4+
+// Generated at 2019-01-20 12:05:09 (504ms) for v2.1.4+
 //{ prototypes
 globalvar mq_ntexture; mq_ntexture = [/* 0:uv_rect */undefined, /* 1:ref_count */0, /* 2:last_active */undefined, /* 3:_sprite */undefined, /* 4:_sprite_img_index */0, /* 5:_native_texture */undefined, /* 6:_root */undefined, /* 7:_region */undefined];
 globalvar mq_events_event; mq_events_event = [/* 0:bubbles */undefined, /* 1:cancelable */undefined, /* 2:current_target */undefined, /* 3:event_phase */undefined, /* 4:target */undefined, /* 5:type */undefined, /* 6:__is_canceled */undefined, /* 7:__is_canceled_now */undefined, /* 8:__prevent_default */undefined];
@@ -334,8 +334,8 @@ testcode_core_ntexture_test_test();
 
 //{ ntexture
 
-#define ntexture_create_empty_texture
-/// @function ntexture_create_empty_texture()->sprite
+#define ntexture_create_empty_sprite
+/// @function ntexture_create_empty_sprite()->sprite
 var surface1 = surface_create(1, 1);
 var buffer1 = buffer_create(4, 0, 1);
 buffer_fill(buffer1, 0, 1, 255, 4);
@@ -347,8 +347,16 @@ return spr;
 
 #define ntexture_get_empty
 /// @function ntexture_get_empty()->ntexture
-if (g_ntexture__empty == undefined) g_ntexture__empty = ntexture_create_from_sprite(ntexture_create_empty_texture());
+if (g_ntexture__empty == undefined) g_ntexture__empty = ntexture_create_from_sprite(ntexture_create_empty_sprite());
 return g_ntexture__empty;
+
+#define ntexture_destory_empty
+/// @function ntexture_destory_empty()
+if (g_ntexture__empty != undefined) {
+	var tmp = g_ntexture__empty;
+	g_ntexture__empty = undefined;
+	ntexture_destroy(tmp);
+}
 
 #define ntexture_create_from_sprite
 /// @function ntexture_create_from_sprite(spr:sprite, subimg:int = 0, ?region:Rectangle, xScale:int = 1, yScale:int = 1)->ntexture
@@ -404,6 +412,17 @@ this[@4/* _sprite_img_index */] = 0;
 this[@3/* _sprite */] = undefined;
 return this;
 
+#define ntexture_destroy
+/// @function ntexture_destroy(this:ntexture)
+/// @param this:ntexture
+var this = argument[0];
+if (this == ntexture_get_empty()) return 0;
+if (ntexture_get_root(this) != this) show_error("Destroy is not allow to call on none root NTexture.", false);
+if (this[3/* _sprite */] != undefined) sprite_delete(this[3/* _sprite */]);
+this[@5/* _native_texture */] = undefined;
+this[@3/* _sprite */] = undefined;
+this[@6/* _root */] = undefined;
+
 #define ntexture_get_root
 /// @function ntexture_get_root(this:ntexture)->ntexture
 /// @param this:ntexture
@@ -421,6 +440,12 @@ return haxe_boot_wget(this[7/* _region */], 1);
 /// @param this:ntexture
 var this = argument[0];
 return haxe_boot_wget(this[7/* _region */], 0);
+
+#define ntexture_get_sprite
+/// @function ntexture_get_sprite(this:ntexture)->sprite
+/// @param this:ntexture
+var this = argument[0];
+return this[3/* _sprite */];
 
 #define ntexture_get_native_texure
 /// @function ntexture_get_native_texure(this:ntexture)->texture
@@ -1679,9 +1704,13 @@ return slice_get(this[2/* slice */], this[@3/* index */]++);
 
 #define testcode_core_ntexture_test_test
 /// @function testcode_core_ntexture_test_test()
-var empty = ntexture_create_empty_texture();
+var empty = ntexture_create_empty_sprite();
 it("create an empty sprite", true, sprite_exists(empty));
-it("texture width = 1", 1, sprite_get_width(empty));
+sprite_delete(empty);
+var globalEmptySprite = ntexture_get_sprite(ntexture_get_empty());
+it("create a global empty texture", true, sprite_exists(globalEmptySprite));
+ntexture_destory_empty();
+it("global empty texture is destructible", false, sprite_exists(globalEmptySprite));
 
 //}
 
