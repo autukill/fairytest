@@ -12,3 +12,7 @@ src/geom/
 yyp/test\.yyp\.sfgml-scripts-cache
 
 src/core/
+
+src/ui/
+
+src/utils/

@@ -1,6 +1,7 @@
 #define fairy_test_init
-// Generated at 2019-01-20 12:05:09 (504ms) for v2.1.4+
+// Generated at 2019-02-11 20:50:21 (681ms) for v2.1.4+
 //{ prototypes
+globalvar mq_ngraphics; mq_ngraphics = [/* 0:enable */undefined, /* 1:vert_index */undefined, /* 2:vert_count */0, /* 3:texture */undefined, /* 4:pos */undefined, /* 5:uv */undefined, /* 6:colors */undefined];
 globalvar mq_ntexture; mq_ntexture = [/* 0:uv_rect */undefined, /* 1:ref_count */0, /* 2:last_active */undefined, /* 3:_sprite */undefined, /* 4:_sprite_img_index */0, /* 5:_native_texture */undefined, /* 6:_root */undefined, /* 7:_region */undefined];
 globalvar mq_events_event; mq_events_event = [/* 0:bubbles */undefined, /* 1:cancelable */undefined, /* 2:current_target */undefined, /* 3:event_phase */undefined, /* 4:target */undefined, /* 5:type */undefined, /* 6:__is_canceled */undefined, /* 7:__is_canceled_now */undefined, /* 8:__prevent_default */undefined];
 globalvar mq_dispatcher; mq_dispatcher = [/* 0:__event_map */undefined, /* 1:__iterators */undefined, /* 2:__target_dispatcher */undefined];
@@ -14,23 +15,30 @@ globalvar mq_haxe_ds_string_map; mq_haxe_ds_string_map = [/* 0:table_size */0, /
 globalvar mq_slice; mq_slice = [/* 0:array */undefined];
 //}
 //{ metatype
-globalvar mt_ntexture; mt_ntexture = haxe_class_create(27, "ntexture");
-globalvar mt_events_event; mt_events_event = haxe_class_create(28, "events_event");
-globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(30, "dispatcher");
-globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(31, "events__event_dispatcher_dispatch_iterator");
-globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(32, "events__event_dispatcher_listener");
-globalvar mt_geom_point; mt_geom_point = haxe_class_create(34, "geom_point");
-globalvar mt_geom_rectangle; mt_geom_rectangle = haxe_class_create(35, "geom_rectangle");
-globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(42, "haxe_class");
-globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(82, "haxe_ds_basic_map");
-globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(84, "haxe_ds_string_map");
-globalvar mt_slice; mt_slice = haxe_class_create(126, "slice");
+globalvar mt_ngraphics; mt_ngraphics = haxe_class_create(34, "ngraphics");
+globalvar mt_ntexture; mt_ntexture = haxe_class_create(35, "ntexture");
+globalvar mt_events_event; mt_events_event = haxe_class_create(36, "events_event");
+globalvar mt_dispatcher; mt_dispatcher = haxe_class_create(38, "dispatcher");
+globalvar mt_events__event_dispatcher_dispatch_iterator; mt_events__event_dispatcher_dispatch_iterator = haxe_class_create(39, "events__event_dispatcher_dispatch_iterator");
+globalvar mt_events__event_dispatcher_listener; mt_events__event_dispatcher_listener = haxe_class_create(40, "events__event_dispatcher_listener");
+globalvar mt_geom_point; mt_geom_point = haxe_class_create(42, "geom_point");
+globalvar mt_geom_rectangle; mt_geom_rectangle = haxe_class_create(43, "geom_rectangle");
+globalvar mt_haxe_class; mt_haxe_class = haxe_class_create(50, "haxe_class");
+globalvar mt_haxe_ds_basic_map; mt_haxe_ds_basic_map = haxe_class_create(92, "haxe_ds_basic_map");
+globalvar mt_haxe_ds_string_map; mt_haxe_ds_string_map = haxe_class_create(94, "haxe_ds_string_map");
+globalvar mt_slice; mt_slice = haxe_class_create(136, "slice");
 //}
 globalvar f_testcode_events_events_test_test_cb; f_testcode_events_events_test_test_cb = asset_get_index("testcode_events_events_test_test_cb");
 globalvar f_testcode_support_slice_test_test_map_func; f_testcode_support_slice_test_test_map_func = asset_get_index("testcode_support_slice_test_test_map_func");
 // array_hx:
 globalvar array_hx_join_buf; array_hx_join_buf = undefined;
 globalvar array_hx_filter_list; array_hx_filter_list = undefined;
+// ngraphics:
+globalvar g_ngraphics_triangles; g_ngraphics_triangles = [0, 1, 2, 2, 3, 0];
+globalvar g_ngraphics_triangles_9_grid; g_ngraphics_triangles_9_grid = [4, 0, 1, 1, 5, 4, 5, 1, 2, 2, 6, 5, 6, 2, 3, 3, 7, 6, 8, 4, 5, 5, 9, 8, 9, 5, 6, 6, 10, 9, 10, 6, 7, 7, 11, 10, 12, 8, 9, 9, 13, 12, 13, 9, 10, 10, 14, 13, 14, 10, 11, 11, 15, 14];
+globalvar g_ngraphics_triangles_4_grid; g_ngraphics_triangles_4_grid = [4, 0, 5, 4, 5, 1, 4, 1, 6, 4, 6, 2, 4, 2, 7, 4, 7, 3, 4, 3, 8, 4, 8, 0];
+globalvar g_ngraphics__corner_radius; g_ngraphics__corner_radius = [0, 0, 0, 0];
+globalvar g_ngraphics__restindices; g_ngraphics__restindices = ds_list_create();
 // ntexture:
 globalvar g_ntexture_empty;
 globalvar g_ntexture__empty; g_ntexture__empty = undefined;
@@ -329,6 +337,883 @@ testcode_events_events_test_test();
 testcode_geom_point_test();
 testcode_geom_rectangle_test();
 testcode_core_ntexture_test_test();
+testcode_core_ngraphics_test_test();
+testcode_utils_tool_set_test_test();
+
+//}
+
+//{ fill_utils
+
+#define fill_utils_horizontal
+/// @function fill_utils_horizontal(origin:int, amount:real, vertRect:Rectangle, uvRect:Rectangle, verts:array<Point>, uv:array<Point>)
+/// @param origin:int
+/// @param amount:real
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param verts:array<Point>
+/// @param uv:array<Point>
+var origin = argument[0], amount = argument[1], vertRect = argument[2], uvRect = argument[3], verts = argument[4], uv = argument[5];
+if (origin == 0) {
+	vertRect[@1/* width */] *= amount;
+	uvRect[@1/* width */] *= amount;
+} else {
+	vertRect[@2/* x */] += vertRect[1/* width */] * (1 - amount);
+	vertRect[@1/* width */] *= amount;
+	uvRect[@2/* x */] += uvRect[1/* width */] * (1 - amount);
+	uvRect[@1/* width */] *= amount;
+}
+ngraphics_fill_verts_of_quad(verts, 0, vertRect);
+ngraphics_fill_uvof_quad(uv, 0, uvRect);
+
+#define fill_utils_vertical
+/// @function fill_utils_vertical(origin:int, amount:real, vertRect:Rectangle, uvRect:Rectangle, verts:array<Point>, uv:array<Point>)
+/// @param origin:int
+/// @param amount:real
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param verts:array<Point>
+/// @param uv:array<Point>
+var origin = argument[0], amount = argument[1], vertRect = argument[2], uvRect = argument[3], verts = argument[4], uv = argument[5];
+if (origin == 0) {
+	vertRect[@0/* height */] *= amount;
+	uvRect[@0/* height */] *= amount;
+} else {
+	vertRect[@3/* y */] += vertRect[0/* height */] * (1 - amount);
+	vertRect[@0/* height */] *= amount;
+	uvRect[@3/* y */] += uvRect[0/* height */] * (1 - amount);
+	uvRect[@0/* height */] *= amount;
+}
+ngraphics_fill_verts_of_quad(verts, 0, vertRect);
+ngraphics_fill_uvof_quad(uv, 0, uvRect);
+
+#define fill_utils_radial90
+/// @function fill_utils_radial90(origin:int, amount:real, clockwise:bool, vertRect:Rectangle, uvRect:Rectangle, verts:array<Point>, uv:array<Point>)
+/// @param origin:int
+/// @param amount:real
+/// @param clockwise:bool
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param verts:array<Point>
+/// @param uv:array<Point>
+var origin = argument[0], amount = argument[1], clockwise = argument[2], vertRect = argument[3], uvRect = argument[4], verts = argument[5], uv = argument[6];
+ngraphics_fill_verts_of_quad(verts, 0, vertRect);
+ngraphics_fill_uvof_quad(uv, 0, uvRect);
+if (amount < 0.001) {
+	verts[@0] = verts[@1] = verts[@2] = verts[3];
+	uv[@0] = uv[@1] = uv[@2] = uv[3];
+	return 0;
+}
+if (amount > 0.999) return 0;
+switch (origin) {
+	case 2:
+		if (clockwise) {
+			var h4 = vertRect[1/* width */] * tan(pi / 2 * (1 - amount));
+			if (h4 > vertRect[0/* height */]) {
+				var ratio8 = (h4 - vertRect[0/* height */]) / h4;
+				haxe_boot_wset(verts[2], 0, haxe_boot_wget(verts[2], 0) - vertRect[1/* width */] * ratio8);
+				verts[@3] = verts[2];
+				haxe_boot_wset(uv[2], 0, haxe_boot_wget(uv[2], 0) - uvRect[1/* width */] * ratio8);
+				uv[@3] = uv[2];
+			} else {
+				var ratio9 = h4 / vertRect[0/* height */];
+				haxe_boot_wset(verts[3], 1, haxe_boot_wget(verts[3], 1) - h4);
+				haxe_boot_wset(uv[3], 1, haxe_boot_wget(uv[3], 1) - uvRect[0/* height */] * ratio9);
+			}
+		} else {
+			var h5 = vertRect[1/* width */] * tan(pi / 2 * amount);
+			if (h5 > vertRect[0/* height */]) {
+				var ratio10 = (h5 - vertRect[0/* height */]) / h5;
+				haxe_boot_wset(verts[1], 0, haxe_boot_wget(verts[1], 0) + vertRect[1/* width */] * (1 - ratio10));
+				haxe_boot_wset(uv[1], 0, haxe_boot_wget(uv[1], 0) + uvRect[1/* width */] * (1 - ratio10));
+			} else {
+				var ratio11 = h5 / vertRect[0/* height */];
+				haxe_boot_wset(verts[2], 1, haxe_boot_wget(verts[2], 1) + vertRect[0/* height */] * (1 - ratio11));
+				verts[@1] = verts[2];
+				haxe_boot_wset(uv[2], 1, haxe_boot_wget(uv[2], 1) + uvRect[0/* height */] * (1 - ratio11));
+				uv[@1] = uv[2];
+			}
+		}
+		break;
+	case 3:
+		if (clockwise) {
+			var h6 = vertRect[1/* width */] * tan(pi / 2 * amount);
+			if (h6 > vertRect[0/* height */]) {
+				var ratio12 = (h6 - vertRect[0/* height */]) / h6;
+				haxe_boot_wset(verts[2], 0, haxe_boot_wget(verts[2], 0) - vertRect[1/* width */] * (1 - ratio12));
+				haxe_boot_wset(uv[2], 0, haxe_boot_wget(uv[2], 0) - uvRect[1/* width */] * (1 - ratio12));
+			} else {
+				var ratio13 = h6 / vertRect[0/* height */];
+				haxe_boot_wset(verts[1], 1, haxe_boot_wget(verts[1], 1) + vertRect[0/* height */] * (1 - ratio13));
+				verts[@2] = verts[3];
+				haxe_boot_wset(uv[1], 1, haxe_boot_wget(uv[1], 1) + uvRect[0/* height */] * (1 - ratio13));
+				uv[@2] = uv[3];
+			}
+		} else {
+			var h7 = vertRect[1/* width */] * tan(pi / 2 * (1 - amount));
+			if (h7 > vertRect[0/* height */]) {
+				var ratio14 = (h7 - vertRect[0/* height */]) / h7;
+				haxe_boot_wset(verts[1], 0, haxe_boot_wget(verts[1], 0) + vertRect[1/* width */] * ratio14);
+				verts[@0] = verts[1];
+				haxe_boot_wset(uv[1], 0, haxe_boot_wget(uv[1], 0) + uvRect[1/* width */] * ratio14);
+				uv[@0] = uv[1];
+			} else {
+				var ratio15 = h7 / vertRect[0/* height */];
+				haxe_boot_wset(verts[0], 1, haxe_boot_wget(verts[0], 1) - h7);
+				haxe_boot_wset(uv[0], 1, haxe_boot_wget(uv[0], 1) - uvRect[0/* height */] * ratio15);
+			}
+		}
+		break;
+	case 0:
+		if (clockwise) {
+			var h = vertRect[1/* width */] * tan(pi / 2 * amount);
+			if (h > vertRect[0/* height */]) {
+				var ratio = (h - vertRect[0/* height */]) / h;
+				haxe_boot_wset(verts[0], 0, haxe_boot_wget(verts[0], 0) + vertRect[1/* width */] * (1 - ratio));
+				haxe_boot_wset(uv[0], 0, haxe_boot_wget(uv[0], 0) + uvRect[1/* width */] * (1 - ratio));
+			} else {
+				var ratio1 = h / vertRect[0/* height */];
+				haxe_boot_wset(verts[3], 1, haxe_boot_wget(verts[3], 1) - vertRect[0/* height */] * (1 - ratio1));
+				verts[@0] = verts[3];
+				haxe_boot_wset(uv[3], 1, haxe_boot_wget(uv[3], 1) - uvRect[0/* height */] * (1 - ratio1));
+				uv[@0] = uv[3];
+			}
+		} else {
+			var h1 = vertRect[1/* width */] * tan(pi / 2 * (1 - amount));
+			if (h1 > vertRect[0/* height */]) {
+				var ratio2 = (h1 - vertRect[0/* height */]) / h1;
+				haxe_boot_wset(verts[3], 0, haxe_boot_wget(verts[3], 0) - vertRect[1/* width */] * ratio2);
+				verts[@2] = verts[3];
+				haxe_boot_wset(uv[3], 0, haxe_boot_wget(uv[3], 0) - uvRect[1/* width */] * ratio2);
+				uv[@2] = uv[3];
+			} else {
+				var ratio3 = h1 / vertRect[0/* height */];
+				haxe_boot_wset(verts[2], 1, haxe_boot_wget(verts[2], 1) + h1);
+				haxe_boot_wset(uv[2], 1, haxe_boot_wget(uv[2], 1) + uvRect[0/* height */] * ratio3);
+			}
+		}
+		break;
+	case 1:
+		if (clockwise) {
+			var h2 = vertRect[1/* width */] * tan(pi / 2 * (1 - amount));
+			if (h2 > vertRect[0/* height */]) {
+				var ratio4 = (h2 - vertRect[0/* height */]) / h2;
+				haxe_boot_wset(verts[0], 0, haxe_boot_wget(verts[0], 0) + vertRect[1/* width */] * ratio4);
+				verts[@1] = verts[2];
+				haxe_boot_wset(uv[0], 0, haxe_boot_wget(uv[0], 0) + uvRect[1/* width */] * ratio4);
+				uv[@1] = uv[2];
+			} else {
+				var ratio5 = h2 / vertRect[0/* height */];
+				haxe_boot_wset(verts[1], 1, haxe_boot_wget(verts[1], 1) + vertRect[0/* height */] * ratio5);
+				haxe_boot_wset(uv[1], 1, haxe_boot_wget(uv[1], 1) + uvRect[0/* height */] * ratio5);
+			}
+		} else {
+			var h3 = vertRect[1/* width */] * tan(pi / 2 * amount);
+			if (h3 > vertRect[0/* height */]) {
+				var ratio6 = (h3 - vertRect[0/* height */]) / h3;
+				haxe_boot_wset(verts[3], 0, haxe_boot_wget(verts[3], 0) - vertRect[1/* width */] * (1 - ratio6));
+				haxe_boot_wset(uv[3], 0, haxe_boot_wget(uv[3], 0) - uvRect[1/* width */] * (1 - ratio6));
+			} else {
+				var ratio7 = h3 / vertRect[0/* height */];
+				haxe_boot_wset(verts[0], 1, haxe_boot_wget(verts[0], 1) - vertRect[0/* height */] * (1 - ratio7));
+				verts[@3] = verts[0];
+				haxe_boot_wset(uv[0], 1, haxe_boot_wget(uv[0], 1) - uvRect[0/* height */] * (1 - ratio7));
+				uv[@3] = uv[0];
+			}
+		}
+		break;
+}
+
+#define fill_utils_radial180
+/// @function fill_utils_radial180(origin:int, amount:real, clockwise:bool, vertRect:Rectangle, uvRect:Rectangle, verts:array<Point>, uv:array<Point>)
+/// @param origin:int
+/// @param amount:real
+/// @param clockwise:bool
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param verts:array<Point>
+/// @param uv:array<Point>
+var origin = argument[0], amount = argument[1], clockwise = argument[2], vertRect = argument[3], uvRect = argument[4], verts = argument[5], uv = argument[6];
+switch (origin) {
+	case 0:
+		if (amount <= 0.5) {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount /= 0.5;
+			fill_utils_radial90((clockwise) ? 0 : 1, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@4] = verts[@5] = verts[@6] = verts[@7] = verts[0];
+			uv[@4] = uv[@5] = uv[@6] = uv[@7] = uv[0];
+		} else {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (!clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial90((clockwise) ? 1 : 0, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			} else {
+				vertRect[@2/* x */] -= vertRect[1/* width */];
+				uvRect[@2/* x */] -= uvRect[1/* width */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 4, vertRect);
+			ngraphics_fill_uvof_quad(uv, 4, uvRect);
+		}
+		break;
+	case 1:
+		if (amount <= 0.5) {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (!clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount /= 0.5;
+			fill_utils_radial90((clockwise) ? 3 : 2, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@4] = verts[@5] = verts[@6] = verts[@7] = verts[0];
+			uv[@4] = uv[@5] = uv[@6] = uv[@7] = uv[0];
+		} else {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial90((clockwise) ? 2 : 3, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@2/* x */] -= vertRect[1/* width */];
+				uvRect[@2/* x */] -= uvRect[1/* width */];
+			} else {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 4, vertRect);
+			ngraphics_fill_uvof_quad(uv, 4, uvRect);
+		}
+		break;
+	case 2:
+		if (amount <= 0.5) {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (!clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount /= 0.5;
+			fill_utils_radial90((clockwise) ? 2 : 0, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@4] = verts[@5] = verts[@6] = verts[@7] = verts[0];
+			uv[@4] = uv[@5] = uv[@6] = uv[@7] = uv[0];
+		} else {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial90((clockwise) ? 0 : 2, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@3/* y */] -= vertRect[0/* height */];
+				uvRect[@3/* y */] -= uvRect[0/* height */];
+			} else {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 4, vertRect);
+			ngraphics_fill_uvof_quad(uv, 4, uvRect);
+		}
+		break;
+	case 3:
+		if (amount <= 0.5) {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount /= 0.5;
+			fill_utils_radial90((clockwise) ? 1 : 3, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@4] = verts[@5] = verts[@6] = verts[@7] = verts[0];
+			uv[@4] = uv[@5] = uv[@6] = uv[@7] = uv[0];
+		} else {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (!clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial90((clockwise) ? 3 : 1, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			} else {
+				vertRect[@3/* y */] -= vertRect[0/* height */];
+				uvRect[@3/* y */] -= uvRect[0/* height */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 4, vertRect);
+			ngraphics_fill_uvof_quad(uv, 4, uvRect);
+		}
+		break;
+}
+
+#define fill_utils_radial360
+/// @function fill_utils_radial360(origin:int, amount:real, clockwise:bool, vertRect:Rectangle, uvRect:Rectangle, verts:array<Point>, uv:array<Point>)
+/// @param origin:int
+/// @param amount:real
+/// @param clockwise:bool
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param verts:array<Point>
+/// @param uv:array<Point>
+var origin = argument[0], amount = argument[1], clockwise = argument[2], vertRect = argument[3], uvRect = argument[4], verts = argument[5], uv = argument[6];
+switch (origin) {
+	case 0:
+		if (amount < 0.5) {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount /= 0.5;
+			fill_utils_radial180((clockwise) ? 2 : 3, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@8] = verts[@9] = verts[@10] = verts[@11] = verts[7];
+			uv[@8] = uv[@9] = uv[@10] = uv[@11] = uv[7];
+		} else {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (!clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial180((clockwise) ? 3 : 2, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			} else {
+				vertRect[@2/* x */] -= vertRect[1/* width */];
+				uvRect[@2/* x */] -= uvRect[1/* width */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 8, vertRect);
+			ngraphics_fill_uvof_quad(uv, 8, uvRect);
+		}
+		break;
+	case 1:
+		if (amount < 0.5) {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (!clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount /= 0.5;
+			fill_utils_radial180((clockwise) ? 3 : 2, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@8] = verts[@9] = verts[@10] = verts[@11] = verts[7];
+			uv[@8] = uv[@9] = uv[@10] = uv[@11] = uv[7];
+		} else {
+			vertRect[@1/* width */] /= 2;
+			uvRect[@1/* width */] /= 2;
+			if (clockwise) {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial180((clockwise) ? 2 : 3, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@2/* x */] -= vertRect[1/* width */];
+				uvRect[@2/* x */] -= uvRect[1/* width */];
+			} else {
+				vertRect[@2/* x */] += vertRect[1/* width */];
+				uvRect[@2/* x */] += uvRect[1/* width */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 8, vertRect);
+			ngraphics_fill_uvof_quad(uv, 8, uvRect);
+		}
+		break;
+	case 2:
+		if (amount < 0.5) {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (!clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount /= 0.5;
+			fill_utils_radial180((clockwise) ? 1 : 0, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@8] = verts[@9] = verts[@10] = verts[@11] = verts[7];
+			uv[@8] = uv[@9] = uv[@10] = uv[@11] = uv[7];
+		} else {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial180((clockwise) ? 0 : 1, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@3/* y */] -= vertRect[0/* height */];
+				uvRect[@3/* y */] -= uvRect[0/* height */];
+			} else {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 8, vertRect);
+			ngraphics_fill_uvof_quad(uv, 8, uvRect);
+		}
+		break;
+	case 3:
+		if (amount < 0.5) {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount /= 0.5;
+			fill_utils_radial180((clockwise) ? 0 : 1, amount, clockwise, vertRect, uvRect, verts, uv);
+			verts[@8] = verts[@9] = verts[@10] = verts[@11] = verts[7];
+			uv[@8] = uv[@9] = uv[@10] = uv[@11] = uv[7];
+		} else {
+			vertRect[@0/* height */] /= 2;
+			uvRect[@0/* height */] /= 2;
+			if (!clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			}
+			amount = (amount - 0.5) / 0.5;
+			fill_utils_radial180((clockwise) ? 1 : 0, amount, clockwise, vertRect, uvRect, verts, uv);
+			if (clockwise) {
+				vertRect[@3/* y */] += vertRect[0/* height */];
+				uvRect[@3/* y */] += uvRect[0/* height */];
+			} else {
+				vertRect[@3/* y */] -= vertRect[0/* height */];
+				uvRect[@3/* y */] -= uvRect[0/* height */];
+			}
+			ngraphics_fill_verts_of_quad(verts, 8, vertRect);
+			ngraphics_fill_uvof_quad(uv, 8, uvRect);
+		}
+		break;
+}
+
+//}
+
+//{ ngraphics
+
+#define ngraphics_fill_verts_of_quad
+/// @function ngraphics_fill_verts_of_quad(verts:array<Point>, index:int, rect:Rectangle)
+/// @param verts:array<Point>
+/// @param index:int
+/// @param rect:Rectangle
+var verts = argument[0], index = argument[1], rect = argument[2];
+verts[@index] = geom_point_create(rect[2/* x */], geom_rectangle_get_bottom(rect));
+verts[@index + 1] = geom_point_create(rect[2/* x */], rect[3/* y */]);
+verts[@index + 2] = geom_point_create(geom_rectangle_get_right(rect), rect[3/* y */]);
+verts[@index + 3] = geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_bottom(rect));
+
+#define ngraphics_fill_uvof_quad
+/// @function ngraphics_fill_uvof_quad(uv:array<Point>, index:int, rect:Rectangle)
+/// @param uv:array<Point>
+/// @param index:int
+/// @param rect:Rectangle
+var uv = argument[0], index = argument[1], rect = argument[2];
+uv[@index] = geom_point_create(rect[2/* x */], geom_rectangle_get_bottom(rect));
+uv[@index + 1] = geom_point_create(rect[2/* x */], rect[3/* y */]);
+uv[@index + 2] = geom_point_create(geom_rectangle_get_right(rect), rect[3/* y */]);
+uv[@index + 3] = geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_bottom(rect));
+
+#define ngraphics_rotate_uv
+/// @function ngraphics_rotate_uv(uv:array<Point>, baseUVRect:Rectangle)
+/// @param uv:array<Point>
+/// @param baseUVRect:Rectangle
+var uv = argument[0], baseUVRect = argument[1];
+var vertCount = array_length_1d(uv);
+var X = min(baseUVRect[2/* x */], geom_rectangle_get_right(baseUVRect));
+var Y = baseUVRect[3/* y */];
+var Bottom = geom_rectangle_get_bottom(baseUVRect);
+if (Y > Bottom) {
+	Y = Bottom;
+	Bottom = baseUVRect[3/* y */];
+}
+var tmp;
+var i = 0;
+for (var _g1 = vertCount; i < _g1; i++) {
+	var m = uv[i];
+	tmp = m[1/* y */];
+	m[@1/* y */] = Y + m[0/* x */] - X;
+	m[@0/* x */] = X + Bottom - tmp;
+	uv[@i] = m;
+}
+
+#define ngraphics_create
+/// @function ngraphics_create()
+var this;
+this[1,0/* metatype */] = mt_ngraphics;
+var __this = mq_ngraphics;
+array_copy(this, 0, __this, 0, array_length_1d(__this));
+this[@2/* vert_count */] = 0;
+this[@1/* vert_index */] = 0;
+this[@0/* enable */] = true;
+return this;
+
+#define ngraphics_clear_mesh
+/// @function ngraphics_clear_mesh(this:ngraphics)
+/// @param this:ngraphics
+var this = argument[0];
+this[@2/* vert_count */] = 0;
+
+#define ngraphics_alloc
+/// @function ngraphics_alloc(this:ngraphics, vertCount:int)
+/// @param this:ngraphics
+/// @param vertCount:int
+var this = argument[0], vertCount = argument[1];
+if (this[2/* vert_count */] == 0 || this[2/* vert_count */] != vertCount) {
+	this[@4/* pos */] = array_create(vertCount, 0);
+	this[@5/* uv */] = array_create(vertCount, 0);
+	this[@6/* colors */] = array_create(vertCount, 0);
+}
+
+#define ngraphics_alloc_vertex_index
+/// @function ngraphics_alloc_vertex_index(this:ngraphics, requestSize:int)
+/// @param this:ngraphics
+/// @param requestSize:int
+var this = argument[0], requestSize = argument[1];
+this[@1/* vert_index */] = array_create(requestSize, 0);
+
+#define ngraphics_fill_pos
+/// @function ngraphics_fill_pos(this:ngraphics, index:int, rect:Rectangle)
+/// @param this:ngraphics
+/// @param index:int
+/// @param rect:Rectangle
+var this = argument[0], index = argument[1], rect = argument[2];
+haxe_boot_wset(this[4/* pos */], index, geom_point_create(geom_rectangle_get_left(rect), geom_rectangle_get_bottom(rect)));
+haxe_boot_wset(this[4/* pos */], index + 1, geom_point_create(geom_rectangle_get_left(rect), geom_rectangle_get_top(rect)));
+haxe_boot_wset(this[4/* pos */], index + 2, geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_top(rect)));
+haxe_boot_wset(this[4/* pos */], index + 3, geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_bottom(rect)));
+
+#define ngraphics_fill_uv
+/// @function ngraphics_fill_uv(this:ngraphics, index:int, rect:Rectangle)
+/// @param this:ngraphics
+/// @param index:int
+/// @param rect:Rectangle
+var this = argument[0], index = argument[1], rect = argument[2];
+haxe_boot_wset(this[5/* uv */], index, geom_point_create(geom_rectangle_get_left(rect), geom_rectangle_get_bottom(rect)));
+haxe_boot_wset(this[5/* uv */], index + 1, geom_point_create(geom_rectangle_get_left(rect), geom_rectangle_get_top(rect)));
+haxe_boot_wset(this[5/* uv */], index + 2, geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_top(rect)));
+haxe_boot_wset(this[5/* uv */], index + 3, geom_point_create(geom_rectangle_get_right(rect), geom_rectangle_get_bottom(rect)));
+
+#define ngraphics_fill_colors
+/// @function ngraphics_fill_colors(this:ngraphics, color:Color)
+/// @param this:ngraphics
+/// @param color:Color
+var this = argument[0], color = argument[1];
+this[@6/* colors */] = array_create(this[2/* vert_count */], color);
+
+#define ngraphics_fill_shape_uv
+/// @function ngraphics_fill_shape_uv(this:ngraphics, posRect:Rectangle, uvRect:Rectangle)
+/// @param this:ngraphics
+/// @param posRect:Rectangle
+/// @param uvRect:Rectangle
+var this = argument[0], posRect = argument[1], uvRect = argument[2];
+var i = 0;
+for (var _g1 = array_length_1d(this[4/* pos */]); i < _g1; i++) {
+	var _pos = haxe_boot_wget(this[4/* pos */], i);
+	haxe_boot_wset(this[5/* uv */], i, geom_point_create(lerp(geom_rectangle_get_left(uvRect), geom_rectangle_get_right(uvRect), (_pos[0/* x */] - geom_rectangle_get_left(posRect)) / posRect[1/* width */]), lerp(geom_rectangle_get_bottom(uvRect), geom_rectangle_get_top(uvRect), (_pos[1/* y */] - geom_rectangle_get_bottom(posRect)) / posRect[0/* height */])));
+}
+
+#define ngraphics_fill_vertex_indexs
+/// @function ngraphics_fill_vertex_indexs(this:ngraphics)
+/// @param this:ngraphics
+var this = argument[0];
+ngraphics_alloc_vertex_index(this, (this[2/* vert_count */] >> 1) * 3);
+var k = 0;
+var loopIndex = 0;
+for (var _g1 = floor(this[2/* vert_count */] / 4); loopIndex < _g1; loopIndex++) {
+	var i = loopIndex * 4;
+	haxe_boot_wset(this[1/* vert_index */], k++, i);
+	haxe_boot_wset(this[1/* vert_index */], k++, i + 1);
+	haxe_boot_wset(this[1/* vert_index */], k++, i + 2);
+	haxe_boot_wset(this[1/* vert_index */], k++, i + 2);
+	haxe_boot_wset(this[1/* vert_index */], k++, i + 3);
+	haxe_boot_wset(this[1/* vert_index */], k++, i);
+}
+
+#define ngraphics_build_rect
+/// @function ngraphics_build_rect(this:ngraphics, posRect:Rectangle, uvRect:Rectangle, fillColor:Color)
+/// @param this:ngraphics
+/// @param posRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param fillColor:Color
+var this = argument[0], posRect = argument[1], uvRect = argument[2], fillColor = argument[3];
+ngraphics_alloc(this, 4);
+ngraphics_fill_pos(this, 0, posRect);
+ngraphics_fill_uv(this, 0, uvRect);
+ngraphics_fill_colors(this, fillColor);
+this[@1/* vert_index */] = g_ngraphics_triangles;
+
+#define ngraphics_build_rect_with_line
+/// @function ngraphics_build_rect_with_line(this:ngraphics, vertRect:Rectangle, uvRect:Rectangle, lineSize:int, lineColor:Color, fillColor:Color)
+/// @param this:ngraphics
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param lineSize:int
+/// @param lineColor:Color
+/// @param fillColor:Color
+var this = argument[0], vertRect = argument[1], uvRect = argument[2], lineSize = argument[3], lineColor = argument[4], fillColor = argument[5];
+if (lineSize == 0) {
+	ngraphics_build_rect(this, vertRect, uvRect, fillColor);
+} else {
+	ngraphics_alloc(this, 20);
+	var rect = geom_rectangle_create(0, 0, lineSize, vertRect[0/* height */]);
+	ngraphics_fill_pos(this, 0, rect);
+	rect = geom_rectangle_create(vertRect[1/* width */] - lineSize, 0, lineSize, vertRect[0/* height */]);
+	ngraphics_fill_pos(this, 4, rect);
+	rect = geom_rectangle_create(lineSize, 0, vertRect[1/* width */] - lineSize * 2, lineSize);
+	ngraphics_fill_pos(this, 8, rect);
+	rect = geom_rectangle_create(lineSize, vertRect[0/* height */] - lineSize, vertRect[1/* width */] - lineSize * 2, lineSize);
+	ngraphics_fill_pos(this, 12, rect);
+	rect = geom_rectangle_create(lineSize, lineSize, vertRect[1/* width */] - lineSize * 2, vertRect[0/* height */] - lineSize * 2);
+	ngraphics_fill_pos(this, 16, rect);
+	ngraphics_fill_shape_uv(this, vertRect, uvRect);
+	var arr = this[6/* colors */];
+	arr[@0] = lineColor;
+	arr[@1] = lineColor;
+	arr[@2] = lineColor;
+	arr[@3] = lineColor;
+	arr[@4] = lineColor;
+	arr[@5] = lineColor;
+	arr[@6] = lineColor;
+	arr[@7] = lineColor;
+	arr[@8] = lineColor;
+	arr[@9] = lineColor;
+	arr[@10] = lineColor;
+	arr[@11] = lineColor;
+	arr[@12] = lineColor;
+	arr[@13] = lineColor;
+	arr[@14] = lineColor;
+	arr[@15] = lineColor;
+	arr[@16] = fillColor;
+	arr[@17] = fillColor;
+	arr[@18] = fillColor;
+	arr[@19] = fillColor;
+	ngraphics_fill_vertex_indexs(this);
+}
+
+#define ngraphics_build_round_rect
+/// @function ngraphics_build_round_rect(this:ngraphics, vertRect:Rectangle, uvRect:Rectangle, fillColor:Color, topLeftRadius:real, topRightRadius:real, bottomLeftRadius:real, bottomRightRadius:real)
+/// @param this:ngraphics
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param fillColor:Color
+/// @param topLeftRadius:real
+/// @param topRightRadius:real
+/// @param bottomLeftRadius:real
+/// @param bottomRightRadius:real
+var this = argument[0], vertRect = argument[1], uvRect = argument[2], fillColor = argument[3], topLeftRadius = argument[4], topRightRadius = argument[5], bottomLeftRadius = argument[6], bottomRightRadius = argument[7];
+g_ngraphics__corner_radius[@0] = topRightRadius;
+g_ngraphics__corner_radius[@1] = topLeftRadius;
+g_ngraphics__corner_radius[@2] = bottomLeftRadius;
+g_ngraphics__corner_radius[@3] = bottomRightRadius;
+var numSides = 0;
+var radius = g_ngraphics__corner_radius[0];
+if (radius != 0) numSides += max(1, ceil(pi * (min(radius, vertRect[1/* width */] / 2) + min(radius, vertRect[0/* height */] / 2)) / 4 / 4)) + 1; else numSides++;
+var radius1 = g_ngraphics__corner_radius[1];
+if (radius1 != 0) numSides += max(1, ceil(pi * (min(radius1, vertRect[1/* width */] / 2) + min(radius1, vertRect[0/* height */] / 2)) / 4 / 4)) + 1; else numSides++;
+var radius2 = g_ngraphics__corner_radius[2];
+if (radius2 != 0) numSides += max(1, ceil(pi * (min(radius2, vertRect[1/* width */] / 2) + min(radius2, vertRect[0/* height */] / 2)) / 4 / 4)) + 1; else numSides++;
+var radius3 = g_ngraphics__corner_radius[3];
+if (radius3 != 0) numSides += max(1, ceil(pi * (min(radius3, vertRect[1/* width */] / 2) + min(radius3, vertRect[0/* height */] / 2)) / 4 / 4)) + 1; else numSides++;
+ngraphics_alloc(this, numSides + 1);
+haxe_boot_wset(this[4/* pos */], 0, geom_point_create(vertRect[1/* width */] / 2, vertRect[0/* height */] / 2));
+var k = 1;
+for (var i = 0; i < 4; i++) {
+	var radius4 = g_ngraphics__corner_radius[i];
+	var radiusX4 = min(radius4, vertRect[1/* width */] / 2);
+	var radiusY4 = min(radius4, vertRect[0/* height */] / 2);
+	var offsetX = 0;
+	var offsetY = 0;
+	if (i == 0 || i == 3) offsetX = vertRect[1/* width */] - radiusX4 * 2;
+	if (i == 0 || i == 1) offsetY = vertRect[0/* height */] - radiusY4 * 2;
+	if (radius4 != 0) {
+		var partNumSides = max(1, ceil(pi * (radiusX4 + radiusY4) / 4 / 4)) + 1;
+		var angleDelta = pi / 2 / partNumSides;
+		var angle = pi / 2 * i;
+		var startAngle = angle;
+		var j = 1;
+		for (var _g11 = partNumSides + 1; j < _g11; j++) {
+			if (j == partNumSides) angle = startAngle + pi / 2;
+			haxe_boot_wset(this[4/* pos */], k, geom_point_create(offsetX + cos(angle) * radiusX4 + radiusX4, offsetY + sin(angle) * radiusY4 + radiusY4));
+			angle += angleDelta;
+			k++;
+		}
+	} else {
+		haxe_boot_wset(this[4/* pos */], k, geom_point_create(offsetX, offsetY));
+		k++;
+	}
+}
+ngraphics_fill_shape_uv(this, vertRect, uvRect);
+ngraphics_alloc_vertex_index(this, numSides * 3);
+var triangles = this[1/* vert_index */];
+k = 0;
+var i1 = 1;
+for (var _g2 = numSides; i1 < _g2; i1++) {
+	triangles[@k++] = 0;
+	triangles[@k++] = i1;
+	triangles[@k++] = i1 + 1;
+}
+triangles[@k++] = 0;
+triangles[@k++] = numSides;
+triangles[@k++] = 1;
+ngraphics_fill_colors(this, fillColor);
+
+#define ngraphics_build_ellipse
+/// @function ngraphics_build_ellipse(this:ngraphics, vertRect:Rectangle, uvRect:Rectangle, fillColor:Color)
+/// @param this:ngraphics
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param fillColor:Color
+var this = argument[0], vertRect = argument[1], uvRect = argument[2], fillColor = argument[3];
+var radiusX = vertRect[1/* width */] / 2;
+var radiusY = vertRect[0/* height */] / 2;
+var numSides = ceil(pi * (radiusX + radiusY) / 4);
+if (numSides < 6) numSides = 6;
+ngraphics_alloc(this, numSides + 1);
+var vertices = this[4/* pos */];
+var angleDelta = 2 * pi / numSides;
+var angle = 0;
+vertices[@0] = geom_point_create(radiusX, radiusY);
+var i = 1;
+for (var _g1 = (numSides + 1); i < _g1; i++) {
+	vertices[@i] = geom_point_create(cos(angle) * radiusX + radiusX, sin(angle) * radiusY + radiusY);
+	angle += angleDelta;
+}
+ngraphics_fill_shape_uv(this, vertRect, uvRect);
+ngraphics_alloc_vertex_index(this, numSides * 3);
+var triangles = this[1/* vert_index */];
+var k = 0;
+var i1 = 1;
+for (var _g3 = numSides; i1 < _g3; i1++) {
+	triangles[@k++] = 0;
+	triangles[@k++] = i1;
+	triangles[@k++] = i1 + 1;
+}
+triangles[@k++] = 0;
+triangles[@k++] = numSides;
+triangles[@k++] = 1;
+ngraphics_fill_colors(this, fillColor);
+
+#define ngraphics_build_polygon
+/// @function ngraphics_build_polygon(this:ngraphics, vertRect:Rectangle, uvRect:Rectangle, points:array<Point>, fillColor:Color)
+/// @param this:ngraphics
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param points:array<Point>
+/// @param fillColor:Color
+var this = argument[0], vertRect = argument[1], uvRect = argument[2], points = argument[3], fillColor = argument[4];
+var numRestIndices = array_length_1d(points);
+if (numRestIndices < 3) return 0;
+var numTriangles = numRestIndices - 2;
+var i;
+var k = 0;
+ngraphics_alloc(this, numRestIndices);
+var vertices = this[4/* pos */];
+var i1 = 0;
+for (var _g1 = numRestIndices; i1 < _g1; i1++) {
+	vertices[@i1] = geom_point_create(haxe_boot_wget(points[i1], 0), -haxe_boot_wget(points[i1], 1));
+}
+ngraphics_fill_shape_uv(this, vertRect, uvRect);
+ngraphics_alloc_vertex_index(this, numTriangles * 3);
+var triangles = this[1/* vert_index */];
+ds_list_clear(g_ngraphics__restindices);
+var i2 = 0;
+for (var _g3 = numRestIndices; i2 < _g3; i2++) {
+	ds_list_add(g_ngraphics__restindices, i2);
+}
+var restIndexPos = 0;
+var a, b, c, p, otherIndex, earFound, i0, i11, i21;
+while (numRestIndices > 3) {
+	earFound = false;
+	i0 = g_ngraphics__restindices[|restIndexPos % numRestIndices];
+	i11 = g_ngraphics__restindices[|(restIndexPos + 1) % numRestIndices];
+	i21 = g_ngraphics__restindices[|(restIndexPos + 2) % numRestIndices];
+	a = points[i0];
+	b = points[i11];
+	c = points[i21];
+	if ((a[1/* y */] - b[1/* y */]) * (c[0/* x */] - b[0/* x */]) + (b[0/* x */] - a[0/* x */]) * (c[1/* y */] - b[1/* y */]) >= 0) {
+		earFound = true;
+		var i3 = 3;
+		for (var _g5 = numRestIndices; i3 < _g5; i3++) {
+			otherIndex = g_ngraphics__restindices[|(restIndexPos + i3) % numRestIndices];
+			p = points[otherIndex];
+			if (utils_tool_set_is_point_in_triangle(p, a, b, c)) {
+				earFound = false;
+				break;
+			}
+		}
+	}
+	if (earFound) {
+		triangles[@k++] = i0;
+		triangles[@k++] = i11;
+		triangles[@k++] = i21;
+		ds_list_delete(g_ngraphics__restindices, (restIndexPos + 1) % numRestIndices);
+		numRestIndices--;
+		restIndexPos = 0;
+	} else {
+		restIndexPos++;
+		if (restIndexPos == numRestIndices) break;
+	}
+}
+triangles[@k++] = g_ngraphics__restindices[|0];
+triangles[@k++] = g_ngraphics__restindices[|1];
+triangles[@k++] = g_ngraphics__restindices[|2];
+ngraphics_fill_colors(this, fillColor);
+
+#define ngraphics_build_rect_with_fill_method
+/// @function ngraphics_build_rect_with_fill_method(this:ngraphics, vertRect:Rectangle, uvRect:Rectangle, fillColor:Color, method:FillMethod, amount:real, origin:int, clockwise:bool)
+/// @param this:ngraphics
+/// @param vertRect:Rectangle
+/// @param uvRect:Rectangle
+/// @param fillColor:Color
+/// @param method:FillMethod
+/// @param amount:real
+/// @param origin:int
+/// @param clockwise:bool
+var this = argument[0], vertRect = argument[1], uvRect = argument[2], fillColor = argument[3], method = argument[4], amount = argument[5], origin = argument[6], clockwise = argument[7];
+amount = clamp(amount, 0, 1);
+switch (method) {
+	case 0: return 0;
+	case 1:
+		ngraphics_alloc(this, 4);
+		fill_utils_horizontal(origin, amount, vertRect, uvRect, this[4/* pos */], this[5/* uv */]);
+		break;
+	case 2:
+		ngraphics_alloc(this, 4);
+		fill_utils_vertical(origin, amount, vertRect, uvRect, this[4/* pos */], this[5/* uv */]);
+		break;
+	case 3:
+		ngraphics_alloc(this, 4);
+		fill_utils_radial90(origin, amount, clockwise, vertRect, uvRect, this[4/* pos */], this[5/* uv */]);
+		break;
+	case 4:
+		ngraphics_alloc(this, 8);
+		fill_utils_radial180(origin, amount, clockwise, vertRect, uvRect, this[4/* pos */], this[5/* uv */]);
+		break;
+	case 5:
+		ngraphics_alloc(this, 12);
+		fill_utils_radial360(origin, amount, clockwise, vertRect, uvRect, this[4/* pos */], this[5/* uv */]);
+		break;
+}
+ngraphics_fill_colors(this, fillColor);
+ngraphics_fill_vertex_indexs(this);
 
 //}
 
@@ -1222,7 +2107,7 @@ return geom_point_clone(p);
 /// @param var_id:int
 /// @param name:string
 var this;
-this[1,0/* metatype */] = 42;
+this[1,0/* metatype */] = 50;
 var __this = mq_haxe_class;
 array_copy(this, 0, __this, 0, array_length_1d(__this));
 var var_id = argument[0], name = argument[1];
@@ -1700,6 +2585,31 @@ return slice_get(this[2/* slice */], this[@3/* index */]++);
 
 //}
 
+//{ testcode.core.ngraphics_test
+
+#define testcode_core_ngraphics_test_test
+/// @function testcode_core_ngraphics_test_test()
+var grap = ngraphics_create();
+ngraphics_build_rect(grap, geom_rectangle_create(32, 32, 64, 64), geom_rectangle_create(0, 0, 1, 1), 16777215);
+var _g = 0;
+var _g1 = grap[4/* pos */];
+while (_g < array_length_1d(_g1)) {
+	var pos = _g1[_g];
+	_g++;
+	trace("src/testcode/core/NGraphicsTest.hx:12:", geom_point_to_string(pos));
+}
+var grap1 = ngraphics_create();
+ngraphics_build_rect_with_fill_method(grap1, geom_rectangle_create(32, 32, 64, 64), geom_rectangle_create(0, 0, 1, 1), 16777215, 3, 0.5, 2, true);
+var _g2 = 0;
+var _g3 = grap1[4/* pos */];
+while (_g2 < array_length_1d(_g3)) {
+	var pos1 = _g3[_g2];
+	_g2++;
+	trace("src/testcode/core/NGraphicsTest.hx:18:", geom_point_to_string(pos1));
+}
+
+//}
+
 //{ testcode.core.ntexture_test
 
 #define testcode_core_ntexture_test_test
@@ -1819,5 +2729,86 @@ var i = slice_hx_iterator_create(slice_create([0, 1, 2, 3, 4]));
 while (script_execute(i[0/* hasNext */], i)) {
 	trace("src/testcode/support/SliceTest.hx:69:", script_execute(i[1/* next */], i));
 }
+
+//}
+
+//{ testcode.utils.tool_set_test
+
+#define testcode_utils_tool_set_test_test
+/// @function testcode_utils_tool_set_test_test()
+var p = geom_point_create(1, 1);
+var a = geom_point_create(0, 0);
+var b = geom_point_create(2, 0);
+var c = geom_point_create(1, 2);
+it("this point is within the specified triangle", true, utils_tool_set_is_point_in_triangle(p, a, b, c));
+p = geom_point_create(0, 0);
+it("this point is within the specified triangle", true, utils_tool_set_is_point_in_triangle(p, a, b, c));
+p = geom_point_create(2, 1);
+it("this point is not within the specified triangle", false, utils_tool_set_is_point_in_triangle(p, a, b, c));
+var fakeMatrix = utils_tool_set_create_matrix(geom_point_create(10, 10), 45, geom_point_create(2, 2), undefined);
+var result = [1.41, -1.41, 0, 0, 1.41, 1.41, 0, 0, 0, 0, 1, 0, 10, 10, 0, 1];
+var state = false;
+var i = 0;
+for (var _g1 = array_length_1d(result); i < _g1; i++) {
+	if (result[i] != fakeMatrix[i]) {
+		state = false;
+		break;
+	}
+}
+it("this matrix is { { 1.41,-1.41,0,0,1.41,1.41,0,0,0,0,1,0,10,10,0,1 },  }", true, state);
+
+//}
+
+//{ utils.tool_set
+
+#define utils_tool_set_is_point_in_triangle
+/// @function utils_tool_set_is_point_in_triangle(p:Point, a:Point, b:Point, c:Point)->bool
+/// @param p:Point
+/// @param a:Point
+/// @param b:Point
+/// @param c:Point
+var p = argument[0], a = argument[1], b = argument[2], c = argument[3];
+var v0x = c[0/* x */] - a[0/* x */];
+var v0y = c[1/* y */] - a[1/* y */];
+var v1x = b[0/* x */] - a[0/* x */];
+var v1y = b[1/* y */] - a[1/* y */];
+var v2x = p[0/* x */] - a[0/* x */];
+var v2y = p[1/* y */] - a[1/* y */];
+var dot00 = v0x * v0x + v0y * v0y;
+var dot01 = v0x * v1x + v0y * v1y;
+var dot02 = v0x * v2x + v0y * v2y;
+var dot11 = v1x * v1x + v1y * v1y;
+var dot12 = v1x * v2x + v1y * v2y;
+var invDen = 1.0 / (dot00 * dot11 - dot01 * dot01);
+var u = (dot11 * dot02 - dot01 * dot12) * invDen;
+var v = (dot00 * dot12 - dot01 * dot02) * invDen;
+return u >= 0 && v >= 0 && u + v < 1;
+
+#define utils_tool_set_create_matrix
+/// @function utils_tool_set_create_matrix(trans:Point, rotate:real, scale:Point, ?skew:Point)->matrix
+/// @param trans:Point
+/// @param rotate:real
+/// @param scale:Point
+/// @param ?skew:Point
+var trans = argument[0], rotate = argument[1], scale = argument[2], skew;
+if (argument_count > 3) skew = argument[3]; else skew = undefined;
+var matrix1 = matrix_build_identity();
+if (scale[0/* x */] != 0 || scale[1/* y */] != 0) matrix1 = matrix_multiply(matrix1, matrix_build(0, 0, 0, 0, 0, 0, scale[0/* x */], scale[1/* y */], 1));
+if (rotate != 0) matrix1 = matrix_multiply(matrix1, matrix_build(0, 0, 0, 0, 0, rotate, 1, 1, 1));
+if (skew != undefined && (skew[0/* x */] != 0 || skew[1/* y */] != 0)) {
+	var skewX = degtorad(skew[0/* x */]);
+	var skewY = degtorad(skew[1/* y */]);
+	var sinX = sin(skewX);
+	var cosX = cos(skewX);
+	var sinY = sin(skewY);
+	var cosY = cos(skewY);
+	var fakeMatrix = matrix1;
+	fakeMatrix[@0] = fakeMatrix[0] * cosY - fakeMatrix[1] * sinX;
+	fakeMatrix[@1] = fakeMatrix[0] * sinY + fakeMatrix[1] * cosX;
+	fakeMatrix[@4] = fakeMatrix[4] * cosY - fakeMatrix[5] * sinX;
+	fakeMatrix[@5] = fakeMatrix[4] * sinY + fakeMatrix[5] * cosX;
+}
+if (trans[0/* x */] != 0 || trans[1/* y */] != 0) matrix1 = matrix_multiply(matrix1, matrix_build(trans[0/* x */], trans[1/* y */], 0, 0, 0, 0, 1, 1, 1));
+return matrix1;
 
 //}

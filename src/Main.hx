@@ -6,5 +6,7 @@ class Main {
         testcode.geom.Point.test();
         testcode.geom.Rectangle.test();
         testcode.core.NTextureTest.test();
+        testcode.core.NGraphicsTest.test();
+        testcode.utils.ToolSetTest.test();
     }
 }
